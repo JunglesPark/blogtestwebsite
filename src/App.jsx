@@ -1,4 +1,4 @@
-import { Navbar, Blogs } from "./components";
+import { Navbar, Blogs, Footer } from "./components";
 
 
 export default function App() {
@@ -6,6 +6,7 @@ export default function App() {
     <div>
       <Navbar />
       <Blogs />
+      <Footer />
     </div>
   )
 }
