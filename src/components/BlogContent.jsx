@@ -73,6 +73,7 @@ const BlogContent = ({blogs}) => {
               <img className="p-2 w-32 h-32 rounded-full mx-auto" src={blog.authorImg} />
               <h1 className="font-bold text-2xl text-center text-gray-900 pt-3">{blog.authorName}</h1>
               <p className="text-center text-gray-900 font-medium">{blog.authorDesc}</p>
+             
             </div>
           </div>
 
