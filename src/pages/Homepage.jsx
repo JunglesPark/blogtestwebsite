@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Blogs, Footer, Carousel } from "../components";
+import { Navbar, Blogs, Footer, Carousel, InfoSection } from "../components";
 
 const slides = [
   "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
@@ -11,9 +11,10 @@ const Homepage = ({blogs}) => {
 
   return (
     <div>
-        <Carousel>
+      <InfoSection />
+        {/*<Carousel>
           {slides.map((s) => (<img src={s} />))}
-        </Carousel>
+  </Carousel>*/}
         <Navbar />
         <Blogs blogs={blogs?blogs:""}/>
         <Footer />
