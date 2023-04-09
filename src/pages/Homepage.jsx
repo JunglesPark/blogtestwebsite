@@ -11,11 +11,12 @@ const Homepage = ({blogs}) => {
 
   return (
     <div>
-      <InfoSection />
+      
         {/*<Carousel>
           {slides.map((s) => (<img src={s} />))}
   </Carousel>*/}
         <Navbar />
+        <InfoSection />
         <Blogs blogs={blogs?blogs:""}/>
         <Footer />
     </div>
