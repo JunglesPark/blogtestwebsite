@@ -18,7 +18,32 @@
   .line-break {
     white-space: pre-wrap;
   }
+
+  .stroke-text{
+    color:white;
+    text-shadow:1px 0 0 cyan,0 1px 0 cyan,-1px 0 0 cyan,0 -1px 0 cyan;
+  }
+
+  .cutCorner {
+    position:relative; background-color: none; 
+    border:1px solid cyan; display: inline-block;
 }
+
+
+  .cutCorner:before {
+      position:absolute; bottom: -1px; right: -1px; content:'';
+      border-bottom: 70px solid cyan;
+      border-left: 70px solid transparent;
+  }
+
+  .cutCorner:after {
+      position:absolute; bottom: -2px; right: -2px; content:'';
+      border-bottom: 70px solid white;
+      border-left: 70px solid transparent;
+  }
+}
+
+
 /*
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
