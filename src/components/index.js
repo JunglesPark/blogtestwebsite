@@ -5,6 +5,7 @@ import BlogContent from "./BlogContent"
 import Carousel from "./Carousel"
 import InfoSection from "./InfoSection"
 import NewsLink from "./NewsLink"
+import Partnerships from "./Partnerships"
 
 export {
     Navbar,
@@ -13,5 +14,6 @@ export {
     BlogContent,
     Carousel,
     InfoSection,
-    NewsLink
+    NewsLink,
+    Partnerships
 }
