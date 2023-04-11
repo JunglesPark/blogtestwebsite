@@ -15,7 +15,6 @@ const Homepage = ({blogs}) => {
         <Carousel />
         <InfoSection />
         <NewsLink />
-        <Blogs blogs={blogs?blogs:""}/>
         <Partnerships />
         <Footer />
     </div>

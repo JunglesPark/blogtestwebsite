@@ -32,10 +32,6 @@ const Navbar = () => {
                 <img src={!toggle?menu:close} alt="menu" className="w-[28px] h-[28px] object-contain mr-10" />
             </div>
 
-            
-            
-            
-
         </div>
         <ul className={toggle ? "absolute bg-white w-full px-8 md:hidden":"hidden"}>
             <li>Home</li>

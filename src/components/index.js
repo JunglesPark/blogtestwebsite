@@ -6,6 +6,9 @@ import Carousel from "./Carousel"
 import InfoSection from "./InfoSection"
 import NewsLink from "./NewsLink"
 import Partnerships from "./Partnerships"
+import HeroSection from "./HeroSection"
+import DiamondShapeIcon from "./DiamondShapeIcon"
+import SkewedContainer from "./SkewedContainer"
 
 export {
     Navbar,
@@ -15,5 +18,8 @@ export {
     Carousel,
     InfoSection,
     NewsLink,
-    Partnerships
+    Partnerships,
+    HeroSection,
+    DiamondShapeIcon,
+    SkewedContainer
 }
