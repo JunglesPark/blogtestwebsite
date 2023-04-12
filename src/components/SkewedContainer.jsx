@@ -2,36 +2,45 @@ import React from 'react'
 
 const SkewedContainer = () => {
   return (
-    <div className="flex w-screen h-screen justify-content-center">
-        <div className="bg-cyan-100 w-1/2 skew-x-[15deg] grid grid-rows-4 grid-cols-2">
-            <div className="h-max w-fit">
-                <img src="https://picsum.photos/id/237/536/354" />
+    <div className="flex w-screen h-screen relative">
+        <div className="absolute -top-10 left-20 text-4xl w-1/3">
+            <h1>Our expertise with Cloud services lie in the following:</h1>
+        </div>
+        
+        <div className="bg-cyan-100 h-full w-1/2 skew-x-[15deg] grid grid-rows-4 grid-cols-2 overflow-hidden absolute right-60">
+            <div className="">
+                <img className="h-full w-full object-fill" src="https://picsum.photos/id/237/536/354" />
             </div>
             <div className="-skew-x-[15deg] ">
-                <h2>DevOps</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2 className="pl-4 m-3 text-3xl">DevOps</h2>
+                <p className="pl-4 pr-6 m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
             <div>
-                <img src="https://picsum.photos/id/237/536/354" />
+                <img className="h-full w-full object-fill" src="https://picsum.photos/id/237/536/354" />
             </div>
             <div className="-skew-x-[15deg] ">
-                <h2>DevOps</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2 className="pl-4 m-3 text-3xl">DevOps</h2>
+                <p className="pl-4 pr-6 m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
             <div>
-                <img src="https://picsum.photos/id/237/536/354" />
+                <img className="h-full w-full object-fill" src="https://picsum.photos/id/237/536/354" />
             </div>
             <div className="-skew-x-[15deg] ">
-                <h2>DevOps</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2 className="pl-4 m-3 text-3xl">DevOps</h2>
+                <p className="pl-4 pr-6 m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
             <div>
-                <img src="https://picsum.photos/id/237/536/354" />
+                <img className="h-full w-full object-fill" src="https://picsum.photos/id/237/536/354" />
             </div>
             <div className="-skew-x-[15deg] ">
-                <h2>DevOps</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2 className="pl-4 m-3 text-3xl">DevOps</h2>
+                <p className="pl-4 pr-6 m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
+        </div>
+        <div className="absolute left-32 bottom-32 w-1/4">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
         </div>
     </div>
   )

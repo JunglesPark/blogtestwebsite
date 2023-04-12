@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, HeroSection, DiamondShapeIcon, SkewedContainer, Footer } from "../components"
+import { Navbar, HeroSection, DiamondShapeIcon, SkewedContainer, Footer, ClientStory } from "../components"
 
 const AboutUsPage = () => {
   return (
@@ -8,7 +8,9 @@ const AboutUsPage = () => {
         <HeroSection />
         <DiamondShapeIcon />
         <SkewedContainer />
+        <ClientStory />
         <Footer />
+        
         
     </div>
   )

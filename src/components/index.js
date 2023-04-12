@@ -9,6 +9,7 @@ import Partnerships from "./Partnerships"
 import HeroSection from "./HeroSection"
 import DiamondShapeIcon from "./DiamondShapeIcon"
 import SkewedContainer from "./SkewedContainer"
+import ClientStory from "./ClientStory"
 
 export {
     Navbar,
@@ -21,5 +22,6 @@ export {
     Partnerships,
     HeroSection,
     DiamondShapeIcon,
-    SkewedContainer
+    SkewedContainer,
+    ClientStory
 }
