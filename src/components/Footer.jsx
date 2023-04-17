@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="w-full h-[75vh] bg-[#02044A] text-gray-300">
         <div className="relative h-[50%] bg-[url('./assets/Home/hero6_photo.png')] bg-cover bg-no-repeat">
-            <div className="h-full w-[15%] bg-blue-500 skew-x-[-15deg] absolute bottom-10 left-10">
+            <div className="h-full w-[15%] bg-blue-400 skew-x-[-15deg] absolute bottom-10 left-10">
             
             </div>
             <div className="h-[60%] w-[50%] bg-white skew-x-[-15deg] absolute -bottom-10 right-32 opacity-75">
