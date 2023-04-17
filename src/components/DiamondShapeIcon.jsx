@@ -4,17 +4,17 @@ const DiamondShapeIcon = () => {
   return (
     <div className="relative w-screen h-screen">
         <div className="relative left-24 top-20 w-[335px] flex rotate-45 grid grid-cols-2 grid-rows-2 gap-x-4 gap-y-4">
-            <div className="bg-white overflow-hidden shadow-md border-2 flex items-center w-40 h-40 max-w-[160px] max-h-[160px] min-w-[80px] min-h-[80px]">
-                <img className="-rotate-45" src="https://i.pinimg.com/736x/9f/f7/8b/9ff78b1a00b89070db87a64ba03c9ba8.jpg" />
+            <div className="p-2 bg-white overflow-hidden shadow-md border-2 flex items-center w-40 h-40 max-w-[160px] max-h-[160px] min-w-[80px] min-h-[80px]">
+                <img className="-rotate-45 object-cover" src="./src/assets/Cloud/Hero2_Logos/aws.png" />
             </div>
-            <div className="bg-white overflow-hidden shadow-md border-2 flex items-center w-40 h-40 max-w-[160px] max-h-[160px] min-w-[80px] min-h-[80px]">
-                <img className="-rotate-45" src="https://i.pinimg.com/736x/9f/f7/8b/9ff78b1a00b89070db87a64ba03c9ba8.jpg" />
+            <div className="p-2 bg-white overflow-hidden shadow-md border-2 flex items-center w-40 h-40 max-w-[160px] max-h-[160px] min-w-[80px] min-h-[80px]">
+                <img className="-rotate-45" src="./src/assets/Cloud/Hero2_Logos/azure.png" />
             </div>
-            <div className="bg-white overflow-hidden shadow-md border-2 flex items-center w-40 h-40 max-w-[160px] max-h-[160px] min-w-[80px] min-h-[80px]">
-                <img className="-rotate-45" src="https://i.pinimg.com/736x/9f/f7/8b/9ff78b1a00b89070db87a64ba03c9ba8.jpg" />
+            <div className="p-2 bg-white overflow-hidden shadow-md border-2 flex items-center w-40 h-40 max-w-[160px] max-h-[160px] min-w-[80px] min-h-[80px]">
+                <img className="-rotate-45" src="./src/assets/Cloud/Hero2_Logos/gcp.png" />
             </div>
-            <div className="bg-white overflow-hidden shadow-md border-2 flex items-center w-40 h-40 max-w-[160px] max-h-[160px] min-w-[80px] min-h-[80px]">
-                <img className="-rotate-45" src="https://i.pinimg.com/736x/9f/f7/8b/9ff78b1a00b89070db87a64ba03c9ba8.jpg" />
+            <div className="p-2 bg-white overflow-hidden shadow-md border-2 flex items-center w-40 h-40 max-w-[160px] max-h-[160px] min-w-[80px] min-h-[80px]">
+                <img className="-rotate-45" src="./src/assets/Cloud/Hero2_Logos/huawei.png" />
             </div>
         </div>
         <div className="w-1/2 absolute top-12 right-24 gap-x-3 m-8 p-8 cutCorner">
