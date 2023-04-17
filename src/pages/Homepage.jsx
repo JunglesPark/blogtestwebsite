@@ -10,7 +10,7 @@ const slides = [
 const Homepage = ({blogs}) => {
 
   return (
-    <div>
+    <div> 
         <Navbar />
         <Carousel />
         <InfoSection />

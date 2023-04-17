@@ -10,6 +10,7 @@ import HeroSection from "./HeroSection"
 import DiamondShapeIcon from "./DiamondShapeIcon"
 import SkewedContainer from "./SkewedContainer"
 import ClientStory from "./ClientStory"
+import ServicesHero from "./ServicesHero"
 
 export {
     Navbar,
@@ -23,5 +24,6 @@ export {
     HeroSection,
     DiamondShapeIcon,
     SkewedContainer,
-    ClientStory
+    ClientStory,
+    ServicesHero
 }

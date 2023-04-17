@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className="w-screen h-screen bg-gray-500">
+    <div className="w-screen h-screen bg-url('')">
         <div className="p-20 w-1/2">
             <h2 className="">Our Services</h2>
             <h1 className="">Cloud Infrastructure</h1>
