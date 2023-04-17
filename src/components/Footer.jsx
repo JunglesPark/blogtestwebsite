@@ -1,9 +1,10 @@
 import React from 'react'
+import { HomepageHero06Photo } from '../assets'
 
 const Footer = () => {
   return (
     <div className="w-full h-[75vh] bg-[#02044A] text-gray-300">
-        <div className="relative h-[50%] bg-[url('https://picsum.photos/id/237/536/354')] bg-cover bg-no-repeat">
+        <div className="relative h-[50%] bg-[url('./assets/Home/hero6_photo.png')] bg-cover bg-no-repeat">
             <div className="h-full w-[15%] bg-blue-500 skew-x-[-15deg] absolute bottom-10 left-10">
             
             </div>
