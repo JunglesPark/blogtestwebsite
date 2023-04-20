@@ -57,6 +57,26 @@
   .ShadowRight {
     box-shadow: 5px 0 5px -5px #333;
   }
+
+  .CornerDiv {
+    height: 300px;
+    background: white;
+    position: relative;
+    
+}
+
+  .CornerDiv:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 80px solid white;
+    border-left: 80px solid white;
+    width: 0;
+}
+  .caret {
+
+    filter: drop-shadow(0 0 -5px #333);
+  }
 }
 
 
