@@ -41,6 +41,22 @@
       border-bottom: 70px solid white;
       border-left: 70px solid transparent;
   }
+
+  .ShadowTop {
+    box-shadow: 0 -0px 5px 0px #333;
+  }
+  
+  .ShadowLeft {
+    box-shadow: -5px 0 5px -5px #333;
+  }
+  
+  .ShadowBottom {
+    box-shadow: 0 5px 5px -5px #333;
+  }
+  
+  .ShadowRight {
+    box-shadow: 5px 0 5px -5px #333;
+  }
 }
 
 

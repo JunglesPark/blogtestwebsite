@@ -1,11 +1,11 @@
 import React from 'react'
-import { Navbar, HeroSection, DiamondShapeIcon, SkewedContainer, Footer, ClientStory } from "../components"
+import { Navbar, HeroSection, DiamondShapeIcon, SkewedContainer, Footer, ClientStory, AboutSection } from "../components"
 
 const AboutUsPage = () => {
   return (
     <div>
         <Navbar />
-        <HeroSection />
+        <AboutSection />
         <DiamondShapeIcon />
         <SkewedContainer />
         <ClientStory />
