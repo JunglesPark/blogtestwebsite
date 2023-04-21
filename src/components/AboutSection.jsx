@@ -3,38 +3,35 @@ import React from 'react'
 const AboutSection = () => {
   return (
     <div>
-        <div className="w-screen h-[90vh] grid grid-cols-2 overflow-hidden ">
+
+        <div className="w-screen xl:h-[90vh] lg:md-[75vh] md:h-[60vh] h-[40vh] flex overflow-hidden ">
             <div>
-                <div className="p-20 m-20 ">
-                    <h1 className="font-bold text-4xl">About Us</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit tenetur sequi dignissimos, maiores officiis, minima nisi laboriosam voluptatum, optio fuga culpa iure ad repellat enim. Quo iure omnis ipsa deserunt.
+                <div className="xl:p-20 xl:m-20 lg:p-15 lg:m-15 md:p-10 md:p-10 p-5 m-5 2xl:w-[40%] xl:w-[35%] md:w-[33%] w-[80%]">
+                    <h1 className="lg:py-10 md:py-6 py-3 font-bold xl:text-6xl lg:text-4xl md:text-2xl text-xl">About Us</h1>
+                    <p className="text-xs lg:text-base xl:text-lg">
+                        Since 2009, we have been providing cutting-edge technology and consulting services, primarily in emerging Asian markets. We are a group of innovators who believe that the future of technology is intertwined with all financial and business processes, assisting daily operations to integrate data-driven tools right now.
                     </p>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum odit, tempora voluptatum distinctio aspernatur quaerat quae error minus amet inventore rerum quibusdam suscipit ut quod omnis ducimus saepe ad beatae.
+                    <p className="text-xs lg:text-base xl:text-lg">
+                        We evolve with technology and are proud to provide middleware services, cloud-related services, blockchain and cryptocurrency services, and the best resources available to you.
                     </p>
                 </div>
             </div>
-            <div className=" relative h-fit">
-                <div className='absolute left-[-15%] w-[30%] h-[100%] bg-white skew-x-[15deg] '></div>
-                <div className='absolute right-[25%] w-[3%] h-full bg-white skew-x-[15deg]  '></div>
-                <div className='absolute right-[10%] w-[3%] h-full bg-white skew-x-[15deg]  '></div>
-                <div className='absolute right-[10%] top-0 w-[13%] h-[10%] bg-white skew-x-[15deg]  '></div>
-                <div className='absolute right-[2%] bottom-[-2%] w-[14%] h-[30%] bg-white skew-x-[15deg] '></div>
-                <div className='absolute right-[-20%] w-[25%] h-full bg-white skew-x-[15deg] '></div>
-                <img src="./src/assets/AboutUs/AboutUs_photo_1.png" className="h-full" alt=".." />
+            <div className="absolute w-full h-full">
+                <img src="./src/assets/AboutUs/AboutUs_photo_1_editted.png" className="absolute right-0 opacity-[20%] md:opacity-[100%] w-[350px] md:w-[500px] lg:w-[600px] xl:w-[900px] " alt=".." />
             </div>
         </div>
-        <div className="w-screen h-[80vh] relative overflow-hidden ">
-            <div>
-                <img src="" alt=".."/>
+
+        <div className="w-screen xl:h-[100vh] lg:h-[75vh] h-[40vh] overflow-hidden relative flex">
+            <div className="absolute w-full h-full">
+                <img src="./src/assets/AboutUs/AboutUs_photo_2.png" className="p-10 absolute left-0 opacity-[20%] md:opacity-[100%] w-[400px] lg:w-[600px] xl:w-[700px]" alt=".."/>
             </div>
-            <div className="absolute bottom-[20%] left-[30%] w-1/2 m-20 p-3 cutCorner caret">
-              <h3 className="w-fit m-2 p-3">Breadth of Knowledge</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div className="w-fit bg-white absolute top-[5%] right-30 xl:left-[30%] xl:top-[40%] lg:top-[35%] md:right-[10%] w-[70%] md:w-[400px] lg:w-[600px] xl:w-[700px] m-20 px-3 py-4 cutCorner caret">
+              <h3 className="w-fit m-2 px-3 lg:py-3 font-bold xl:text-4xl lg:text-3xl md:text-2xl text-xl">Why Us</h3>
+              <p className="text-xs lg:text-base xl:text-lg p-5">Our team is open to custom projects, and are happy to pursue any kind of software engineering, project management or cloud-based concerns moving forward. We thank you for considering Sonivy.</p>
 
             </div>
         </div>
+
     </div>
   )
 }

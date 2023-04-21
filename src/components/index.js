@@ -12,6 +12,8 @@ import SkewedContainer from "./SkewedContainer"
 import ClientStory from "./ClientStory"
 import ServicesHero from "./ServicesHero"
 import AboutSection from "./AboutSection"
+import ClientsAndPartners from "./ClientsAndPartners"
+import ClientCarousel from "./ClientCarousel"
 
 export {
     Navbar,
@@ -27,5 +29,7 @@ export {
     SkewedContainer,
     ClientStory,
     ServicesHero,
-    AboutSection
+    AboutSection,
+    ClientsAndPartners,
+    ClientCarousel
 }
