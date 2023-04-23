@@ -2,9 +2,9 @@ import React from 'react'
 
 const Partnerships = () => {
   return (
-    <div className="bg-cyan-100 relative w-screen h-[240px]">
-        <div className="w-fit self-center">
-          <h1 className="flex text-center text-4xl font-bold -top-6 absolute">Our Partners</h1>
+    <div className="bg-cyan-100 relative w-screen lg:h-[400px] h-fit">
+        <div className="flex w-full place-items-center">
+          <h1 className="text-blue-900 w-full text-center text-6xl font-black -top-10 absolute">Our Partners</h1>
         </div>
         
         <div className="grid xl:grid-cols-4 md:grid-cols-2 place-items-center flex w-full h-full">

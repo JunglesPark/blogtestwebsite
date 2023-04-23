@@ -15,6 +15,7 @@ import AboutSection from "./AboutSection"
 import ClientsAndPartners from "./ClientsAndPartners"
 import ClientCarousel from "./ClientCarousel"
 
+
 export {
     Navbar,
     Blogs,
@@ -31,5 +32,6 @@ export {
     ServicesHero,
     AboutSection,
     ClientsAndPartners,
-    ClientCarousel
+    ClientCarousel,
+        
 }
