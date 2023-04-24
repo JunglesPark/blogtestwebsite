@@ -15,6 +15,7 @@ import AboutSection from "./AboutSection"
 import ClientsAndPartners from "./ClientsAndPartners"
 import ClientCarousel from "./ClientCarousel"
 import ContactForm from "./ContactForm"
+import HomeHeroSection from "./HomeHeroSection"
 
 export {
     Navbar,
@@ -33,5 +34,6 @@ export {
     AboutSection,
     ClientsAndPartners,
     ClientCarousel,
-    ContactForm
+    ContactForm,
+    HomeHeroSection
 }
