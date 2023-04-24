@@ -15,7 +15,7 @@ const Footer = () => {
                     <div className="grid grid-cols-3">
                         <a href="/about" className="transition-all items-center text-black font-bold hover:font-black lg:text-lg xl:text-xl">About Us</a>
                         <a href="/services" className="transition-all text-black font-bold hover:font-black lg:text-lg xl:text-xl">Our Services</a>
-                        <a href="#" className="transition-all text-black font-bold hover:font-black lg:text-lg xl:text-xl">Contact Us</a>
+                        <a href="/contactus" className="transition-all text-black font-bold hover:font-black lg:text-lg xl:text-xl">Contact Us</a>
                     </div>
                 </div>
             </div>
