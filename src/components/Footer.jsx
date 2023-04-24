@@ -11,18 +11,18 @@ const Footer = () => {
             <div className="flex h-full lg:h-[60%] w-full lg:w-[50%] bg-white lg:skew-x-[-15deg] absolute lg:-bottom-10 lg:right-32 opacity-75 px-16 py-8 place-items-center">
                 <div className="lg:skew-x-[15deg]">
                     <h2 className="text-black text-3xl font-black">Looking to fast track your way to success</h2>
-                    <button className="my-5 p-2">Drop us a Message</button>
+                    <button className="transition-all my-5 p-2">Drop us a Message</button>
                     <div className="grid grid-cols-3">
-                        <a href="/about" className="items-center text-black font-bold hover:font-black lg:text-lg xl:text-xl">About Us</a>
-                        <a href="/services" className="text-black font-bold hover:font-black lg:text-lg xl:text-xl">Our Services</a>
-                        <a href="#" className="text-black font-bold hover:font-black lg:text-lg xl:text-xl">Contact Us</a>
+                        <a href="/about" className="transition-all items-center text-black font-bold hover:font-black lg:text-lg xl:text-xl">About Us</a>
+                        <a href="/services" className="transition-all text-black font-bold hover:font-black lg:text-lg xl:text-xl">Our Services</a>
+                        <a href="#" className="transition-all text-black font-bold hover:font-black lg:text-lg xl:text-xl">Contact Us</a>
                     </div>
                 </div>
             </div>
         </div>
         <div className="h-fit bg-cyan-100">
             <div className="mx-10 p-20 w-[300px]">
-                <img src="./src/assets/SonivyLogo/Footer_Logo.png" alt=".." className="object-cover"/>
+                <img src="../src/assets/SonivyLogo/Footer_Logo.png" alt=".." className="object-cover"/>
             </div>
             <div className="mx-20 grid lg:grid-cols-3 grid-cols-1">
                 <div className="p-10">

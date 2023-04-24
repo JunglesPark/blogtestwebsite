@@ -2,9 +2,9 @@ import React from 'react'
 
 const NewsLink = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 grid-rows-3 p-10 m-10">
+    <div className="grid lg:grid-cols-3 gap-4 grid-rows-3 p-10 m-10">
         <div className="row-span-3">
-            <h1 className="pb-5 text-blue-900 text-6xl font-bold">Information</h1>
+            <h1 className="pb-5 text-blue-900 xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-bold">Information</h1>
             <a className="text-cyan-500" href="#">View more...</a>
         </div>
         

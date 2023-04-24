@@ -17,7 +17,8 @@ const Navbar = () => {
                 <ul className="hidden md:flex">
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About Us</a></li>
-                    <li><a href="/services">Services</a></li>
+                    <li><a href="/services/Cloud">Cloud</a></li>
+                    <li><a href="/services/Middleware">Middleware</a></li>
                 </ul>
             </div>
 

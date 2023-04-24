@@ -17,13 +17,13 @@ const AboutSection = () => {
                 </div>
             </div>
             <div className="absolute w-full h-full">
-                <img src="./src/assets/AboutUs/AboutUs_photo_1_editted.png" className="absolute right-0 opacity-[20%] md:opacity-[100%] w-[350px] md:w-[500px] lg:w-[600px] xl:w-[900px] " alt=".." />
+                <img src="../src/assets/AboutUs/AboutUs_photo_1_editted.png" className="absolute right-0 opacity-[20%] md:opacity-[100%] w-[350px] md:w-[500px] lg:w-[600px] xl:w-[900px] " alt=".." />
             </div>
         </div>
 
         <div className="w-screen xl:h-[100vh] lg:h-[75vh] h-[40vh] overflow-hidden relative flex">
             <div className="absolute w-full h-full">
-                <img src="./src/assets/AboutUs/AboutUs_photo_2.png" className="p-10 absolute left-0 opacity-[20%] md:opacity-[100%] w-[400px] lg:w-[600px] xl:w-[700px]" alt=".."/>
+                <img src="../src/assets/AboutUs/AboutUs_photo_2.png" className="p-10 absolute left-0 opacity-[20%] md:opacity-[100%] w-[400px] lg:w-[600px] xl:w-[700px]" alt=".."/>
             </div>
             <div className="w-fit bg-white absolute top-[5%] right-30 xl:left-[30%] xl:top-[40%] lg:top-[35%] md:right-[10%] w-[70%] md:w-[400px] lg:w-[600px] xl:w-[700px] m-20 px-3 py-4 cutCorner caret">
               <h3 className="w-fit m-2 px-3 lg:py-3 font-bold xl:text-4xl lg:text-3xl md:text-2xl text-xl">Why Us</h3>

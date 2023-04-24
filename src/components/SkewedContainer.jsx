@@ -8,8 +8,8 @@ const SkewedContainer = () => {
         </div>
         
         <div className=" bg-cyan-100 h-[80%] lg:w-[800px] lg:skew-x-[15deg] grid grid-rows-4 grid-cols-2 overflow-hidden absolute lg:right-40 my-20">
-            <div className="overflow-hidden">
-                <img className="object-contain" src="./src/assets/Cloud/Hero3_photo_1.png" />
+            <div className="flex overflow-hidden">
+                <img className="w-full" src="../src/assets/Cloud/Hero3_photo_1.png" />
             </div>
             <div className="bg-blue-500">
                 <div className="lg:-skew-x-[15deg]">
@@ -17,8 +17,8 @@ const SkewedContainer = () => {
                     <p className="pl-4 pr-6 m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>
             </div>
-            <div className="overflow-hidden">
-                <img className="object-contain" src="./src/assets/Cloud/Hero3_photo_2.png" />
+            <div className="flex overflow-hidden">
+                <img className="w-full" src="../src/assets/Cloud/Hero3_photo_2.png" />
             </div>
             <div className="bg-teal-500">
                 <div className="lg:-skew-x-[15deg]">
@@ -26,8 +26,8 @@ const SkewedContainer = () => {
                     <p className="pl-4 pr-6 m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>
             </div>
-            <div className="overflow-hidden">
-                <img className="object-contain" src="./src/assets/Cloud/Hero3_photo_3.png" />
+            <div className="flex overflow-hidden">
+                <img className="w-full" src="../src/assets/Cloud/Hero3_photo_3.png" />
             </div>
             <div className="bg-blue-500">
                 <div className="lg:-skew-x-[15deg]">
@@ -35,8 +35,8 @@ const SkewedContainer = () => {
                     <p className="pl-4 pr-6 m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 </div>
             </div>
-            <div className="overflow-hidden">
-                <img className="object-contain" src="./src/assets/Cloud/Hero3_photo_4.png" />
+            <div className="flex overflow-hidden">
+                <img className="w-full" src="../src/assets/Cloud/Hero3_photo_4.png" />
             </div>
             <div className="bg-teal-500">
                 <div className="lg:-skew-x-[15deg]">
