@@ -1,5 +1,6 @@
 import { Homepage, BlogContentPage, AboutUsPage, ServicesCloudPage, ServicesMiddlewarePage, ContactUsPage } from "./pages"
 import { Routes, Route } from "react-router-dom"
+import { Navbar, Footer } from "./components"
 import useFetch from "./hooks/useFetch"
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
 
   return (
     <div>
+      <Navbar />
       <Routes>
         
         <Route path="/" element={<Homepage blogs={data?data:""} />}></Route>
@@ -18,7 +20,9 @@ export default function App() {
         <Route path="/services/cloud" element={<ServicesCloudPage />}></Route>
         <Route path="/services/middleware" element={<ServicesMiddlewarePage />}></Route>
         <Route path="/contactus" element={<ContactUsPage />}></Route>
+        
       </Routes>
+      <Footer />
     </div>
   )
 }
