@@ -21,8 +21,8 @@ const Footer = () => {
             </div>
         </div>
         <div className="h-fit bg-cyan-100">
-            <div className="mx-10 p-20 w-[300px]">
-                <img src="../src/assets/SonivyLogo/Footer_Logo.png" alt=".." className="object-cover"/>
+            <div className="mx-10 p-16 pb-8 w-[300px]">
+                <img src="../src/assets/SonivyLogo/Sonivy-short-Logo.png" alt=".." className="object-cover"/>
             </div>
             <div className="mx-20 grid lg:grid-cols-3 grid-cols-1">
                 <div className="p-10">

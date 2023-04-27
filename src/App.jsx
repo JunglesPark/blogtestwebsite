@@ -11,7 +11,6 @@ export default function App() {
 
   return (
     <div>
-      <Navbar />
       <Routes>
         
         <Route path="/" element={<Homepage blogs={data?data:""} />}></Route>
@@ -22,7 +21,6 @@ export default function App() {
         <Route path="/contactus" element={<ContactUsPage />}></Route>
         
       </Routes>
-      <Footer />
     </div>
   )
 }

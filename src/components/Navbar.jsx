@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto">
 
             <div className="flex items-center">
-                <img src="./src/assets/SonivyLogo/Header_Logo.png" alt="logo image" className="sm:ml-10 ss:ml-10 md:ml-3 opacity-[55%] w-full h-[25px]"/>
+                <img src="../src/assets/SonivyLogo/sonivy-long-logo.png" alt="logo image" className="sm:ml-10 ss:ml-10 md:ml-3 w-full h-[25px]"/>
             </div>
 
             <div className="flex items-center">

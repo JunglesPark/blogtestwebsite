@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       'backgroundImage': 
         {
-          'hero-pattern':"url('./src/assets/Home/InfoSectionBG.png')"
+          'logo-long':"url('/assets/SonivyLogo/sonivy-long-logo.png')"
         }
     },
   },
