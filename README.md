@@ -6,4 +6,5 @@
 Open another terminal for strapi
 
 1. cd src/strapi
-2. npm run develop
+2. npm install
+3. npm run develop
