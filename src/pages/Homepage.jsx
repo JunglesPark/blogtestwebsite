@@ -11,7 +11,6 @@ const Homepage = ({blogs}) => {
 
   return (
     <div> 
-        <Navbar />
         <HomeHeroSection />
         <InfoSection />
         <NewsLink />

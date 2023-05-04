@@ -1,23 +1,49 @@
 import React from 'react'
 
 const HomeHeroSection = () => {
+    const latestNews= {
+        "Date":"Feb 07, 2023",
+        "Category":"News Cat",
+        "Title":"News Title Here"
+    }
   return (
     <div>
-        <div className="w-screen h-[50vh] bg-[url('./src/assets/Home2/hero1_banner_1.png')] bg-fit bg-no-repeat">
+        <div className='relative'>
+            <div className='bg-[#239CCF] 2xl:h-[655px] xl:h-[555px] md:h-[435px] h-[305px] w-full'>
+                <div className='h-1/4 bg-white w-full'/>
+                <div className='w-full text-center rotate-90 absolute md:-left-[48%] md:top-[200px] xl:-left-[49%] lg:top-[220px] 2xl:top-[260px] md:block hidden text-white text-[8px] font-bold'>SCROLL &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</div>
+            </div>
+            <div className="w-full  2xl:h-[655px] xl:h-[555px] md:h-[435px] h-[305px] bg-[url('./src/assets/Home2/hero1_banner_1.png')] bg-cover bg-no-repeat absolute bottom-0"
+            style={{clipPath: 'polygon(30% 0%, 100% 0, 100% 100%, 0% 100%)'}}>
 
+            </div>
         </div>
-        <div className="mt-20 h-[150px] w-screen bg-blue-500">
-            <div className="p-14 w-1/3">
-                <div>
-                    <h3 className="font-bold text-white">Latest News Release</h3>
-                </div>
-                <div className="grid grid-cols-3 gap-x-5">
-                    <p className="font-bold text-white">Feb . 07 . 2023</p>
-                    <button className="transition-all">News Cat</button>
-                    <p className="font-bold text-white">News Title Here</p>
+
+        {/* Latest News Bar */}
+        <div className='w-full bg-[#239CCF] h-[72px]'>
+            <div className="grid grid-cols-12 gap-4 h-full">
+                <a className='col-span-12 md:col-span-7 w-full py-4 px-8 sm:px-6 lg:px-8' href="#">
+                    <div className='flex items-center text-white text-sm'>
+                        Latest News Release
+                    </div>
+                    <div className='flex items-center text-white text-sm' >
+                        <div className='mr-5'>{latestNews.Date} </div>
+                        <div className='rounded-xl bg-white text-[#239CCF] px-8 mr-8'>{latestNews.Category}</div>
+                        <div >{latestNews.Title}</div>
+                    </div>
+                </a>
+                <div className='col-span-5 w-full bg-white -translate-y-8 hidden md:block' style={{clipPath: 'polygon(10% 0%, 100% 0, 100% 100%, 0% 100%)'}}>
+                    <div className="grid grid-cols-12 gap-0 h-full">
+                        <div className='col-span-7 w-full flex items-center justify-center bg-white' >
+                            <div className="2xl:text-3xl lg:text-xl md:text-lg font-bold text-[#239CCF]">About Sonivy</div>
+                        </div>
+                        <div className='col-span-5 w-full bg-[#6DC4E2]' style={{clipPath: 'polygon(25% 0%, 100% 0, 100% 100%, 0% 100%)'}}/>
+                    </div> 
                 </div>
             </div>
         </div>
+
+        {/*
 
         <div className="w-full h-[50vh] bg-cyan-100 bg-fit bg-no-repeat flex justify-center">
             <div className="self-center border-4 border-inset p-8 mx-8 flex bg-white md:h-[360px] h-[400px] xl:w-[1200px] lg:w-[800px] md:w-[640px] w-screen drop-shadow-lg">
@@ -32,7 +58,7 @@ const HomeHeroSection = () => {
                     <img className="invisible lg:visible w-full drop-shadow-sm" src="../src/assets/Home/hero2_photo_2.png" />
                 </div>
             </div>
-        </div>
+        </div> */}
 
     </div>
   )
