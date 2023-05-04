@@ -1,15 +1,12 @@
 import React from 'react'
-import { Carousel, ClientCarousel, Navbar } from '../components'
+import { Carousel, ClientCarousel, Navbar, ImageSlider } from '../components'
 
 const TestingComponents = () => {
   return (
     <div>
         <Navbar />
         <Carousel />
-        <div className="w-[33vw]">
-            <ClientCarousel />
-        </div>
-        
+        <ImageSlider />
     </div>
   )
 }
