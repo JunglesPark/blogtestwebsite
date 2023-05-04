@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { React, useState } from 'react'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline'
 import { Transition } from '@headlessui/react'
 

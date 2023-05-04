@@ -12,17 +12,13 @@ export default function App() {
   return (
     <div>
       <Routes>
-        
         <Route path="/" element={<Homepage blogs={data?data:""} />}></Route>
         <Route path="/blog/:id" element={<BlogContentPage blogs={data?data:""} />}></Route>
         <Route path="/about" element={<AboutUsPage />}></Route>
         <Route path="/services/cloud" element={<ServicesCloudPage />}></Route>
         <Route path="/services/middleware" element={<ServicesMiddlewarePage />}></Route>
         <Route path="/contactus" element={<ContactUsPage />}></Route>
-
-
         <Route path="/test" element={<TestingComponents />}></Route>
-        
       </Routes>
     </div>
   )
