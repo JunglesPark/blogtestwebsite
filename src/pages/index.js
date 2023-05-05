@@ -4,7 +4,7 @@ import AboutUsPage from "./AboutUsPage";
 import ServicesCloudPage from "./ServicesCloudPage";
 import ServicesMiddlewarePage from "./ServicesMiddlewarePage";
 import ContactUsPage from "./ContactUsPage";
-import TestingComponents from "./TestingComponents";
+
 
 export {
     Homepage,
@@ -13,5 +13,5 @@ export {
     ServicesCloudPage,
     ServicesMiddlewarePage,
     ContactUsPage,
-    TestingComponents
+    
 }
