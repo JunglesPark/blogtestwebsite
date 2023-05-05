@@ -1,14 +1,12 @@
 import React from 'react'
-import { Navbar, HeroSection, DiamondShapeIcon, SkewedContainer, Footer, ClientStory } from "../components"
+import { HeroSection, DiamondShapeIcon, SkewedContainer, ClientStory } from "../components"
 
 const ServicesCloudPage = () => {
   return (
     <div>
-      <Navbar />
       <HeroSection />
       <DiamondShapeIcon />
       <SkewedContainer />
-      <Footer />
     </div>
   )
 }

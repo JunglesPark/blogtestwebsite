@@ -21,6 +21,7 @@ export default function App() {
         <Route path="/contactus" element={<ContactUsPage />}></Route>
         
       </Routes>
+      <Footer/>
     </div>
   )
 }
