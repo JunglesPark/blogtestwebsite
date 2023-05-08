@@ -42,7 +42,7 @@ const InfoSection = () => {
       <div className='col-span-12 md:col-span-6'>
         <h1 className='font-bold text-8xl absolute z-10 -translate-y-5 text-white text-stroke'>0{index}</h1>
         <div className="bg-[#035C87] m-8" style={{clipPath: 'polygon(100% 0, 100% 72%, 84% 100%, 0 100%, 0 0)'}}>
-          <div className="bg-white p-8 w-full scale-[0.996] md:h-fit md:min-h-[340px] h-fit" style={{clipPath: 'polygon(100% 0, 100% 72%, 84% 100%, 0 100%, 0 0)'}}>
+          <div className="bg-white p-8 w-full scale-[0.996] md:h-fit md:min-h-[340px] min-h-[320px]" style={{clipPath: 'polygon(100% 0, 100% 72%, 84% 100%, 0 100%, 0 0)'}}>
             
             <h3 className="w-fit border-2 border-solid rounded-full border-[#239CCF] mt-8 py-1 px-8 font-semibold text-[#239CCF] text-lg">{name}</h3>
             <p className="text-sm md:text-md lg:text-base py-3">{content}</p>
