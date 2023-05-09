@@ -70,7 +70,7 @@ const HomeHeroSection = () => {
 
     
         <div className="w-full bg-[#035C87]/10 flex justify-center py-20">
-            <div className='xl:max-w-6xl lg:max-w-4xl md:max-w-2xl max-w-xs flex justify-center align-middle w-full'>
+            <div className='xl:max-w-6xl lg:max-w-4xl md:max-w-2xl sm:max-w-sm max-w-xs flex justify-center align-middle w-full'>
                 <div className='grid grid-cols-12 gap-4'>
                     <div className='md:col-span-10 col-span-11'>
                         {/* Show on md */}
@@ -97,8 +97,7 @@ const HomeHeroSection = () => {
                             <div className='w-1/3'>
                                 <img className="w-full drop-shadow-xl xl:scale-110 lg:scale-125 md:scale-150 md:translate-y-24 lg:translate-y-20 xl:translate-y-0" src="../src/assets/Home/hero2_photo_2.png" />
                             </div>
-                        </div>
-                        
+                        </div>                
                         {/* Show on sm */}
                         <div className='h-full min-h-[200px] bg-white flex md:hidden shadow-lg'>
                             <div className='w-full py-8 px-8'>
@@ -121,13 +120,7 @@ const HomeHeroSection = () => {
                         </div>
                     </div>
                     <Hero2ButtonArrow/>
-
                 </div>
-
-
-
-                {/* Show on sm */}
-
             </div>
         </div>
 
