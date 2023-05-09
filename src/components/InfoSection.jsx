@@ -59,9 +59,12 @@ const InfoSection = () => {
         <div className="flex justify-center align-middle overflow-hidden " style={height}>
           <div className='xl:max-w-6xl lg:max-w-4xl md:max-w-2xl sm:max-w-sm max-w-xs w-full '>
             <div className='grid grid-cols-12 gap-0 -skew-x-[20deg]'>
-              <div className='lg:col-span-4 xl:col-span-5 md:col-span-2 hidden md:block md:max-h-[920px] max-h-[680px] overflow-hidden mt-20 bg-green-400'>
+              <div className='lg:col-span-4 xl:col-span-5 md:col-span-4 hidden md:block md:max-h-[920px] max-h-[680px] overflow-hidden mt-20 relative'>
+                <div className={`absolute skew-x-[20deg] w-[1080px] h-full -left-48`}>
+                  <img src={InfoSectionBG} className='object-cover object-center w-full h-full'/>
+                </div>
               </div>
-              <div className='lg:col-span-8 xl:col-span-7 md:col-span-10 col-span-12 bg-[#E4EEF2] md:h-[1080px] h-[720px]'>
+              <div className='lg:col-span-8 xl:col-span-7 md:col-span-8 col-span-12 bg-[#E4EEF2] md:h-[1080px] h-[720px]'>
               </div>
             </div>
           </div>
