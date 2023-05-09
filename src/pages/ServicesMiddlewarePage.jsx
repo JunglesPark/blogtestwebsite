@@ -4,7 +4,11 @@ import { HeroSection, DiamondShapeIcon, SkewedContainer, ClientStory } from "../
 const ServicesMiddlewarePage = () => {
   return (
     <div>
+<<<<<<< Updated upstream
       <HeroSection />
+=======
+      <HeroSection title={title} content={content} />
+>>>>>>> Stashed changes
       <DiamondShapeIcon />
       <ClientStory />
     </div>

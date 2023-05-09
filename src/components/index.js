@@ -16,9 +16,14 @@ import ClientsAndPartners from "./ClientsAndPartners"
 import ClientCarousel from "./ClientCarousel"
 import ContactForm from "./ContactForm"
 import HomeHeroSection from "./HomeHeroSection"
+<<<<<<< Updated upstream
 import Example from "./Example"
 import SimpleMap from "./LocationMap"
 import ImageSwiper from "./ImageSwiper"
+=======
+// import ServicesDescription from "./ServicesDescription"
+import HeroSectionExample from "./ServicesDescription"
+>>>>>>> Stashed changes
 
 export {
     Navbar,
@@ -39,7 +44,12 @@ export {
     ClientCarousel,
     ContactForm,
     HomeHeroSection,
+<<<<<<< Updated upstream
     Example,
     SimpleMap, 
     ImageSwiper
+=======
+    // ServicesDescription,
+    HeroSectionExample
+>>>>>>> Stashed changes
 }
