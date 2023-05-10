@@ -1,4 +1,4 @@
-import { Homepage, BlogContentPage, AboutUsPage, ServicesCloudPage, ServicesMiddlewarePage, ContactUsPage } from "./pages"
+import { Homepage, BlogContentPage, AboutUsPage, ServicesCloudPage, ServicesMiddlewarePage, ServicesWeb3Page, ServicesStartUpPage, ContactUsPage } from "./pages"
 import { Routes, Route } from "react-router-dom"
 import { Navbar, Footer } from "./components"
 import useFetch from "./hooks/useFetch"
@@ -18,6 +18,8 @@ export default function App() {
         <Route path="/about" element={<AboutUsPage />}></Route>
         <Route path="/services/cloud" element={<ServicesCloudPage />}></Route>
         <Route path="/services/middleware" element={<ServicesMiddlewarePage />}></Route>
+        <Route path="/services/web3" element={<ServicesWeb3Page />}></Route>
+        <Route path="/services/startup" element={<ServicesStartUpPage />}></Route>
         <Route path="/contactus" element={<ContactUsPage />}></Route>
         
       </Routes>

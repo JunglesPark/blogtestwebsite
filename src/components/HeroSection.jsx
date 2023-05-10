@@ -2,11 +2,11 @@ import React from 'react'
 
 import { Test } from './test'
 
-const HeroSection = ({ title, content}) => {
+const HeroSection = ({ idx, title, content}) => {
 
   return (
     <div>
-      <Test title={title} content={content}/>
+      <Test idx={idx} title={title} content={content}/>
     </div>
     
   )

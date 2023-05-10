@@ -6,7 +6,6 @@ const AboutUsPage = () => {
     <div>
         <AboutSection />
         <ClientsAndPartners />
-        <ImageSwiper />
     </div>
   )
 }

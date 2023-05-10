@@ -18,12 +18,12 @@ const our_services = [
     }
   ]
 
-const Test = ({title, content}) => {
+const Test = ({idx, title, content}) => {
 
     return (
         <div>
-            <h1>{our_services.service_title}</h1>
-            <p>{our_services.service_description}</p>
+            <h1>{title=our_services[idx]['service_title']}</h1>
+            <p>{content=our_services[idx]['service_description']}</p>
         </div>
     )
 }
