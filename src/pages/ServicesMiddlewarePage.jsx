@@ -5,7 +5,7 @@ const ServicesMiddlewarePage = () => {
   return (
     <div>
       <HeroSection idx={1}/>
-      <DiamondShapeIcon />
+      <DiamondShapeIcon idx={1}/>
       <ClientStory />
     </div>
   )

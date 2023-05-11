@@ -21,15 +21,24 @@ const ServicesDescription = () => {
           service_description: "With increasing competition and constantly evolving technology, new entrepreneurs require a solid business plan before launching their new business. Our team of experts can provide you with a wealth of knowledge in a variety of fields, including finance, operations, and scalable technology. Our collective experience and expertise will pave the way for your success.",
         }
       ]
-  
+      
+      const ServiceBox = ({index, name, content}) =>{
+        return(
+            <div className="bg-[#035C87] m-8" style={{clipPath: 'polygon(100% 0, 100% 72%, 84% 100%, 0 100%, 0 0)'}}>
+              <div className="bg-white p-8 w-full scale-[0.996] md:h-fit md:min-h-[340px] min-h-[320px]" style={{clipPath: 'polygon(100% 0, 100% 72%, 84% 100%, 0 100%, 0 0)'}}>
+                
+                <h3 className="w-fit border-2 border-solid rounded-full border-[#239CCF] mt-8 py-1 px-8 font-semibold text-[#239CCF] text-lg">{title}</h3>
+                <p className="text-sm md:text-md lg:text-base py-3">{content}</p>
+              </div>
+            </div>
+        )
+      }
 
     return(
     <div>
-
-                <div>
-                    <ServiceBox title={our_services.service_title} content={our_services.service_description} />
-                </div>
-
+        <div>
+            <ServiceBox title={our_services.service_title} content={our_services.service_description} />
+        </div>
     </div>
     )
   

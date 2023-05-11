@@ -5,7 +5,7 @@ const ServicesCloudPage = () => {
   return (
     <div>
       <HeroSection idx={0}/>
-      <DiamondShapeIcon />
+      <DiamondShapeIcon idx={0}/>
       <SkewedContainer />
     </div>
   )
