@@ -4,7 +4,7 @@ import { HeroSection, DiamondShapeIcon, SkewedContainer, ClientStory } from "../
 const ServicesMiddlewarePage = () => {
   return (
     <div>
-      <HeroSection />
+      <HeroSection idx={1}/>
       <DiamondShapeIcon />
       <ClientStory />
     </div>

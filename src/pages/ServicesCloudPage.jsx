@@ -4,7 +4,7 @@ import { HeroSection, DiamondShapeIcon, SkewedContainer, ClientStory } from "../
 const ServicesCloudPage = () => {
   return (
     <div>
-      <HeroSection />
+      <HeroSection idx={0}/>
       <DiamondShapeIcon />
       <SkewedContainer />
     </div>

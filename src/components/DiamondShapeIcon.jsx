@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { ServicesForCustomers } from './servicesforcustomers'
+
 const DiamondShapeIcon = () => {
   return (
     <div className="relative w-screen md:h-[100vh] h-[120vh] p-20 bg-[url('./assets/background_patterns.png')] bg-cover">
