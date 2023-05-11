@@ -1,6 +1,7 @@
 import React from 'react'
 import { HomepageHero06Photo } from '../assets'
 import { screenSize } from '../hooks/screenSize'
+import { ArrowLongRightIcon } from '@heroicons/react/24/outline'
 
 const Footer = () => {
     let screenWidth = screenSize()
@@ -19,6 +20,21 @@ const Footer = () => {
         },
 
     ]
+
+    const links = [
+        {
+            href: "/about",
+            name: "About Us"
+        },
+        {
+            href: "/services",
+            name: "Our Services"
+        },
+        {
+            href: "/contactus",
+            name: "Contact Us"
+        },
+    ]
   return (
     <div className="w-full">
         {/* <div className='bg-[url("./assets/Home/hero6_photo.png")] bg-cover bg-center h-[40vh]'>
@@ -28,17 +44,19 @@ const Footer = () => {
 
         </div>  */}
         <div className="relative h-[40vh] bg-[url('./assets/Home/hero6_photo.png')] bg-cover bg-center bg-no-repeat">
-            <div className="h-full w-[250px] bg-blue-900 skew-x-[-15deg] absolute bottom-10 left-10 opacity-70 invisible lg:visible">
+            <div className="h-full w-[150px] bg-[#239CCF] -skew-x-[15deg] absolute bottom-10 left-20 opacity-70 invisible lg:visible">
             
             </div>
-            <div className="flex h-full lg:h-[60%] w-full lg:w-[50%] bg-white lg:skew-x-[-15deg] absolute lg:-bottom-10 lg:right-32 opacity-75 px-16 py-8 place-items-center">
+            <div className="flex h-full md:h-4/5 w-full lg:w-[50%] bg-white lg:skew-x-[-15deg] absolute lg:-bottom-10 lg:right-32 opacity-75 px-16 py-8 place-items-center">
                 <div className="lg:skew-x-[15deg]">
-                    <h2 className="text-black text-3xl font-black">Looking to fast track your way to success</h2>
-                    <button className="transition-all my-5 p-2">Drop us a Message</button>
+                    <h2 className="text-black text-2xl font-bold tracking-wider">Looking to fast track your way to success?</h2>
+                    <button className="transition-all bg-[#239CCF] border-none hover:bg-[#035C87] hover:border-none my-5 py-3 px-8 flex hover:text-gray-300">Drop us a Message <ArrowLongRightIcon className='h-6 w-6 ml-4'/></button>
                     <div className="grid grid-cols-3">
-                        <a href="/about" className="transition-all items-center text-black font-bold hover:font-black lg:text-lg xl:text-xl">About Us</a>
-                        <a href="/services" className="transition-all text-black font-bold hover:font-black lg:text-lg xl:text-xl">Our Services</a>
-                        <a href="/contactus" className="transition-all text-black font-bold hover:font-black lg:text-lg xl:text-xl">Contact Us</a>
+                        {links.map((item,idx)=>{
+                            return(
+                                <a href={item.href} key={idx} className="transition-all text-black font-light hover:text-gray-700 lg:text-lg xl:text-xl underline hover:no-underline">{item.name}</a>
+                            )
+                        })}
                     </div>
                 </div>
             </div>

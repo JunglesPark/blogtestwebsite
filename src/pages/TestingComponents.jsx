@@ -1,12 +1,10 @@
 import React from 'react'
-import { Carousel, ClientCarousel, Navbar, ImageSlider } from '../components'
+import { Carousel, ClientCarousel, Navbar } from '../components'
 
 const TestingComponents = () => {
   return (
     <div>
-        <Navbar />
         <Carousel />
-        <ImageSlider />
     </div>
   )
 }

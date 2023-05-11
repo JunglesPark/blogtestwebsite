@@ -3,8 +3,10 @@ import BlogContentPage from "./BlogContentPage";
 import AboutUsPage from "./AboutUsPage";
 import ServicesCloudPage from "./ServicesCloudPage";
 import ServicesMiddlewarePage from "./ServicesMiddlewarePage";
+import ServicesWeb3Page from "./ServicesWeb3Page";
+import ServicesStartUpPage from "./ServicesStartUpPage";
 import ContactUsPage from "./ContactUsPage";
-import TestingComponents from "./TestingComponents";
+
 
 export {
     Homepage,
@@ -12,6 +14,8 @@ export {
     AboutUsPage,
     ServicesCloudPage,
     ServicesMiddlewarePage,
+    ServicesWeb3Page,
+    ServicesStartUpPage,
     ContactUsPage,
-    TestingComponents
+    
 }
