@@ -1,67 +1,132 @@
-import React from 'react'
+import React, {useState, useEffect, Fragment} from 'react'
 
 const ContactForm = () => {
+    const formList = [
+        {
+            title: "First Name",
+            required: true,
+            placeholder: "Your Name",
+            id: "name"
+        },
+        {
+            title: "Company Name",
+            required: false,
+            placeholder: "Your Company Name",
+            id: "companyName"
+        },
+        {
+            title: "Email",
+            required: true,
+            placeholder: "Your Email",
+            id: "email"
+        },
+        {
+            title: "Contact Number",
+            required: true,
+            placeholder: "Your Contact Number",
+            id: "contactNumber"
+        },
+        {
+            title: "Message",
+            required: true,
+            placeholder: "Leave Us Your Message",
+            id: "message"
+        },
+    ]
+    
+    const [contactInfo, setContactInfo] = useState({
+        name:"",
+        companyName: "",
+        email:"",
+        contactNumber:"",
+        message:"",
+        error: {}
+    })
+
+    const fieldChange = name => event =>{
+        setContactInfo({...contactInfo, [name] : event.target.value})
+    }
+
+    const handleFormValidation = () =>{
+        let fields = contactInfo
+        let errors = {}
+        
+        Object.keys(fields).forEach((key,index)=>{
+            if(!fields[key] && key != "companyName"){
+                if(key === "contactNumber"){
+                    errors[key] = "CONTACT NUMBER canot be empty!"
+                } else {
+                    errors[key] = key.toUpperCase() + " " + "cannot be empty!"
+                }
+            }
+        })
+        console.log(errors)
+        setContactInfo({...contactInfo, error: errors})
+    }
+
+    useEffect(()=>{
+        console.log(contactInfo)
+    },[contactInfo])
+    
+
+
   return (
     <div className="">
-        <div className="p-20 h-fit grid lg:grid-cols-2">
-            <div className="">
-                <h1 className="text-6xl font-bold pb-10">Contact Us</h1>
-                <p className="">For enquiries, please contact us using the form below. We will get back to you within 2-3 business days.</p>
+        <div className='xl:max-w-6xl lg:max-w-4xl md:max-w-2xl sm:max-w-sm max-w-xs w-full flex align-middle justify-center mx-auto'>
+            <div className='grid grid-cols-12 gap-4 w-full'>
+                <div className='col-span-9 '>
+                    <div className="my-16 w-full">
+                        <h1 className="text-6xl font-bold pb-10">Contact Us</h1>
+                        <p className="">For enquiries, please contact us using the form below. </p>
+                        <p>We will get back to you within 2-3 business days.</p>
+                    </div>
+                </div>
             </div>
-            <div></div>
         </div>
-        <form className="px-4 my-32 w-[80%] mx-auto space-y-6">
 
-            <div className="flex grid grid-cols-12">
-                <label className="font-bold col-span-5" htmlFor="name">First Name:</label>
-                <input 
-                    className="col-span-7 border border-gray-400 block py-2 px-4 w-full rounded" 
-                    type="text"
-                    name="name"
-                    id="name"
-                />
-            </div>
+        <div className='xl:max-w-6xl lg:max-w-4xl md:max-w-2xl sm:max-w-sm max-w-xs w-full flex align-middle justify-center mx-auto mb-32'>
+            <div className='grid grid-cols-12 gap-4 w-full'>
+                <div className='col-span-12'>
+                    <form className='w-full'>
+                        <hr/>
+                        {formList.map((item,idx)=>{
+                            return(
+                                <Fragment  key={idx}>
+                                    <div className='block md:flex align-middle items-center py-8'>  
+                                        <div className='md:w-1/2 w-full flex align-middle items-center md:mb-0 mb-4'>
+                                            <div className='w-1/2'>
+                                                <div className='font-semibold'>{item.title}</div>
+                                            </div>
+                                            {item.required === true ? <div className='text-[#FF0000] underline mx-auto font-light'>Required</div> : null}
+                                        </div>     
+                                        <div className='md:w-1/2 w-full'>
+                                            {item.id != "message" ?
+                                                <>
+                                                    <input className='border-gray-400 block w-full h-[52px] rounded ' type="text" name={item.id} id={item.id} placeholder={item.placeholder} onChange={fieldChange(item.id)}/>
+                                                </>
+                                                :
+                                                <textarea className='border-gray-400 block w-full h-[200px] rounded' type="text" name={item.id} id={item.id} placeholder={item.placeholder}/>
+                                            }
+                                            {contactInfo.error[item.id] ? 
+                                                <div className='text-[#FF0000] font-light text-sm'>{contactInfo.error[item.id]}</div> 
+                                                :
+                                                null
+                                            }
+                                        </div>
+                                    </div>
+                                    <hr className='last:hidden'/>
+                                </Fragment>
+                            )
+                        })}
+                    </form>
+                    <div className='md:w-1/3 w-full mx-auto mt-8'>
+                        <button className='w-full py-3 mx-auto bg-[#239CCF] border-none' onClick={handleFormValidation}>Submit</button>
+                    </div>           
 
-            <div className="flex grid grid-cols-12">
-                <label className="font-bold col-span-5" htmlFor="companyname">Company Name:</label>
-                <input 
-                    className="col-span-7 border border-gray-400 block py-2 px-4 w-full rounded" 
-                    type="text"
-                    name="companyname"
-                    id="companyname"
-                />
-            </div>
 
-            <div className="flex grid grid-cols-12">
-                <label className="font-bold col-span-5" htmlFor="companyname">Email:</label>
-                <input 
-                    className="col-span-7 border border-gray-400 block py-2 px-4 w-full rounded" 
-                    type="text"
-                    name="companyname"
-                    id="companyname"
-                />
+                </div>
             </div>
-
-            <div className="flex grid grid-cols-12">
-                <label className="font-bold col-span-5" htmlFor="companyname">Contact Number:</label>
-                <input 
-                    className="col-span-7 border border-gray-400 block py-2 px-4 w-full rounded" 
-                    type="text"
-                    name="companyname"
-                    id="companyname"
-                />
-            </div>
-
-            <div className="flex grid grid-cols-12">
-                <label className="font-bold col-span-5" htmlFor="companyname">Message: </label>
-                <input 
-                    className="col-span-7 border border-gray-400 block py-2 px-4 w-full rounded" 
-                    type="text"
-                    name="companyname"
-                    id="companyname"
-                />
-            </div>
-        </form>
+        </div>
     </div>
   )
 }
