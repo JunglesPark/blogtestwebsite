@@ -50,23 +50,32 @@ const ContactForm = () => {
     const handleFormValidation = () =>{
         let fields = contactInfo
         let errors = {}
+        let formIsValid = true
         
         Object.keys(fields).forEach((key,index)=>{
             if(!fields[key] && key != "companyName"){
                 if(key === "contactNumber"){
                     errors[key] = "CONTACT NUMBER canot be empty!"
+                    formIsValid = false
                 } else {
                     errors[key] = key.toUpperCase() + " " + "cannot be empty!"
+                    formIsValid = false
                 }
             }
-        })
-        console.log(errors)
-        setContactInfo({...contactInfo, error: errors})
-    }
 
-    useEffect(()=>{
-        console.log(contactInfo)
-    },[contactInfo])
+            if(typeof fields["email"] !== "undefined"){
+                let lastAtPos = fields["email"].lastIndexOf("@")
+                let lastDotPos = fields["email"].lastIndexOf(".")
+
+                if (!(lastAtPos < lastDotPos && lastAtPos > 0 && fields["email"].indexOf("@@") == -1 && lastDotPos > 2 && fields["email"].length - lastDotPos > 2)) {
+                    errors["email"] = "Please input valid email!"
+					formIsValid = false
+				}
+            }
+        })
+        setContactInfo({...contactInfo, error: errors})
+        return formIsValid
+    }
     
 
 
@@ -120,7 +129,7 @@ const ContactForm = () => {
                         })}
                     </form>
                     <div className='md:w-1/3 w-full mx-auto mt-8'>
-                        <button className='w-full py-3 mx-auto bg-[#239CCF] border-none' onClick={handleFormValidation}>Submit</button>
+                        <button className='w-full py-3 mx-auto bg-[#239CCF] border-none active:bg-[#035C87] hover:bg-[#035C87] hover:text-white' onClick={handleFormValidation}>Submit</button>
                     </div>           
 
 
