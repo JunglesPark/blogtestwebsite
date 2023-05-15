@@ -3,13 +3,13 @@ import React from 'react'
 const ClientStory = () => {
   return (
     <div className="relative bg-gray-200 justify-center w-screen h-full py-20">
-        <div className="">
-            <div className="absolute  w-[135px] h-[135px] bg-cover bg-[url('../src/assets/Middleware/HKJCLogo.png')]">
+        <div className="md:translate-y-[26px] ">
+            <div className="absolute md:translate-y-[3px] translate-y-[-50px] md:translate-x-[50px] md:w-[135px] md:h-[135px] w-[100px] h-[100px] bg-cover bg-[url('../src/assets/Middleware/HKJCLogo.png')] z-20">
             </div>
-            <div>
-                <h2 className="">Story of Client</h2>
+            <div className="pl-12 md:translate-x-[120px] md:translate-y-[26px] lg:w-[500px] w-[400px] bg-cyan-500" style={{clipPath: 'polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%)'}}>
+                <h2 className="p-2 md:pl-5 pl-14 text-white text-xl font-bold lg:tracking-widest">Story of Client</h2>
                 <hr className=""></hr>
-                <h3 className="">Hong Kong Jockey Club</h3>
+                <h3 className="p-2 pl-5 text-white text-xl font-black lg:tracking-widest">Hong Kong Jockey Club</h3>
             </div>
         </div>
         
