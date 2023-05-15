@@ -3,13 +3,13 @@ import React from 'react'
 const ClientStory = () => {
   return (
     <div className="relative bg-gray-200 justify-center w-screen h-full py-20">
-        <div className="absolute top-[2%] flex ">
-            <div className="w-[250px] h-[250px] bg-cover bg-[url('../src/assets/Middleware/HKJCLogo.png')]">
-            
+        <div className="">
+            <div className="absolute  w-[135px] h-[135px] bg-cover bg-[url('../src/assets/Middleware/HKJCLogo.png')]">
             </div>
-            <div className="h-fit">
-                <h2>Story of Client</h2>
-                <h3>Hong Kong Jockey Club</h3>
+            <div>
+                <h2 className="">Story of Client</h2>
+                <hr className=""></hr>
+                <h3 className="">Hong Kong Jockey Club</h3>
             </div>
         </div>
         
