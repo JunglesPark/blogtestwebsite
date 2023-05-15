@@ -1,13 +1,13 @@
 import React from 'react'
 
-import { Test } from './test'
+import { HeroContent } from './HeroContent'
 
 const HeroSection = ({ idx, title, content}) => {
 
   return (
     <div>
-      <div className="w-screen h-[75vh] bg-[url('./assets/Cloud/Cloud_banner_1.png')] bg-cover bg-no-repeat pt-[70px] mb-margin-sm md:mb-margin-md lg:mb-margin-lg px-width-padding-sm md:px-width-padding-md xl:px-width-padding-lg relative">
-        <Test idx={idx} title={title} content={content}/>
+      <div className="w-screen h-[75vh] bg-[url('./assets/Cloud/Cloud_banner_1.png')] bg-cover bg-no-repeat mb-margin-sm md:mb-margin-md lg:mb-margin-lg px-width-padding-sm md:px-width-padding-md xl:px-width-padding-lg relative flex justify-center items-center">
+        <HeroContent idx={idx} title={title} content={content}/>
       </div>
       
     </div>

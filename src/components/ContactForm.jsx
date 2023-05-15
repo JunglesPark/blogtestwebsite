@@ -169,8 +169,6 @@ const ContactForm = () => {
                         <div className='md:w-1/3 w-full mx-auto mt-8'>
                             <button className='w-full py-3 mx-auto bg-[#239CCF] border-none active:bg-[#035C87] hover:bg-[#035C87] hover:text-white' onClick={handleFormValidation}>Submit</button>
                         </div>           
-
-
                     </div>
                 </div>
             </div>

@@ -18,23 +18,35 @@ const our_services = [
     }
   ]
 
-const Test = ({idx, title, content}) => {
+const HeroContent = ({idx, title, content}) => {
 
     return (
-        <div>
-          <div className="grid grid-cols-6 md:grid-cols-12">
-            <div className="items-start relative px-20  2xl:w-[800px] xl:w-[600px] md:w-[400px] min-w-[400px] justify-content-center col-span-12 md:col-span-6">
-                <h2 className="text-2xl font-bold">Our Services</h2>
-                
-                <h1 className="text-4xl font-bold">{title=our_services[idx]['service_title']}</h1>
-                <p className="py-5">{content=our_services[idx]['service_description']}</p>
-            </div>
-            <div className="relative 2xl:w-[800px] xl:w-[600px] md:w-[480px] min-w-[480px] invisible md:visible align-items-center">
-                <img className="relative py-10 md:block left-[60%] top-[30%] md:translate-x-[-76%] lg:translate-x-[-73%] md:translate-y-[-44%]" height="512px" width="512px" src="../src/assets/Cloud/Cloud_banner_2.png" alt=".."/>
+        <div className="flex align-middle justify-center">
+          <div className="xl:max-w-6xl lg:max-w-4xl md:max-w-2xl sm:max-w-sm max-w-xs ">
+            <div className="grid grid-cols-12">
+              <div className="md:col-span-6 items-center flex col-span-12 order-last md:order-first">
+                <div className="relative flex md:px-20  justify-center md:text-start text-center">
+                  <div>
+                    <h2 className="text-2xl font-bold">Our Services</h2>
+                    
+                    <h1 className="text-4xl font-bold">{title=our_services[idx]['service_title']}</h1>
+                    <p className="py-5">{content=our_services[idx]['service_description']}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="md:col-span-6 col-span-12 md:mb-0 mb-12">
+                <img className="w-3/4 m-auto" src="../src/assets/Cloud/Cloud_banner_2.png" alt=".."/>
+              </div>
+
+
+
+              {/* <div className="relative 2xl:w-[800px] xl:w-[600px] md:w-[480px] min-w-[480px] invisible md:visible align-items-center">
+                  <img className="relative py-10 md:block left-[60%] top-[30%] md:translate-x-[-76%] lg:translate-x-[-73%] md:translate-y-[-44%]" height="512px" width="512px" src="../src/assets/Cloud/Cloud_banner_2.png" alt=".."/>
+              </div> */}
             </div>
           </div>
         </div>
     )
 }
 
-export {Test}
+export {HeroContent}
