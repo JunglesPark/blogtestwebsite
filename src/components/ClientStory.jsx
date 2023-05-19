@@ -1,8 +1,14 @@
 import React from 'react'
 
 import MiddlewareClientBG from "../assets/Middleware/backgroundMiddleware.png"
+import { screenSize } from '../hooks/screenSize'
+
+
 
 const ClientStory = () => {
+
+    let screenSizeWidth = screenSize()
+
   return (
     <div className="relative flex bg-gray-100 justify-center w-screen h-full py-32 ">
 
