@@ -14,6 +14,7 @@ const ClientStory = () => {
 
                    
             <div className="ClientStoryBackground w-[80vw] md:col-start-3 md:col-span-8 col-span-12">
+                {/* The Logo and Header for HKJC */}
                 <div>
                     <div className="relative md:w-[135px] md:h-[135px] w-[100px] h-[100px] md:translate-x-[-50%] translate-x-[0%] md:translate-y-[-50%] translate-y-[-75%] bg-cover bg-[url('../src/assets/Middleware/HKJCLogo.png')] z-50">
                     </div>
@@ -24,6 +25,57 @@ const ClientStory = () => {
                     </div>
                 </div>
 
+                {/* White text */}
+                <p className="p-8 m-8 text-lg font-semibold text-white w-2/3">Our middleware professionals can engineer a platform for your data systems to operate in a scalable and fault tolerant manner.</p>
+                
+                {/* Different Benefits for Clients Section */}
+                <div className="border-4 border-inset p-8 mx-8 my-20 flex bg-white h-fill w-[80%] self-center">
+                    <div className="px-10 lg:w-2/3 ">
+                        <div>
+                            <h1 className="px-6 py-2 w-fit xl:text-3xl text-xl text-cyan-500 font-bold border-2 border-solid rounded-full border-cyan-200">Data Integration</h1>
+                        </div>
+                        <p className="py-5 lg:text-base text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    <div className="lg:w-1/3 w-0 self-center">
+                        <img className="relative invisible lg:visible drop-shadow-sm h-[100%] w-[85%] max-w-[210px] max-h-[240px]" src="../src/assets/Middleware/Hero4_photo_1_lowres.png" />
+                    </div>
+                </div>
+
+                <div className="border-4 border-inset p-8 mx-8 my-20 flex bg-white h-fill w-[80%]">
+                    <div className="lg:w-1/3 w-0 self-center">
+                        <img className="relative invisible lg:visible h-[100%] w-[85%] max-w-[210px] max-h-[240px]" src="../src/assets/Middleware/Hero4_photo_2_lowres.png" />
+                    </div>
+                    <div className="px-10 lg:w-2/3">
+                        <div className="flex lg:justify-end">
+                            <h1 className="px-6 py-2 w-fit xl:text-3xl text-xl text-cyan-500 font-bold border-2 border-solid rounded-full border-cyan-200">Solid Automation</h1>
+                        </div>
+                        <p className="py-5 lg:text-base text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+
+                <div className="border-4 border-inset p-8 mx-8 my-20 flex bg-white h-fill w-[80%]">
+                    <div className="px-10 lg:w-2/3">
+                        <div>
+                            <h1 className="px-6 py-2 w-fit xl:text-3xl text-xl text-cyan-500 font-bold border-2 border-solid rounded-full border-cyan-200">System Operability Solutions</h1>
+                        </div>
+                        <p className="py-5 lg:text-base text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                    <div className="lg:w-1/3 w-0 self-center ">
+                        <img className="relative invisible lg:visible h-[100%] w-[85%] max-w-[210px] max-h-[240px]" src="../src/assets/Middleware/Hero4_photo_3_lowres.png" />
+                    </div>
+                </div>
+
+                <div className="border-4 border-inset p-8 mx-8 my-20 flex bg-white h-fill w-[80%]">
+                    <div className="lg:w-1/3 w-0 self-center">
+                        <img className="relative invisible lg:visible h-[100%] w-[85%] max-w-[210px] max-h-[240px]" src="../src/assets/Middleware/Hero4_photo_4_lowres.png" />
+                    </div>
+                    <div className="px-10 lg:w-2/3">
+                        <div className="flex lg:justify-end">
+                            <h1 className="px-6 py-2 w-fit xl:text-3xl text-xl text-cyan-500 font-bold border-2 border-solid rounded-full border-cyan-200">Excellent Scalability</h1>
+                        </div>
+                        <p className="py-5 lg:text-base text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
                
             </div>
 
