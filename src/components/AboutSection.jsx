@@ -12,10 +12,10 @@ const AboutSection = () => {
                     <div className='col-span-12 md:col-span-6 flex items-center'>
                         <div className='p-2 md:p-0'>
                             <h1 className="lg:py-10 md:py-6 py-3 font-bold xl:text-6xl lg:text-4xl md:text-2xl text-3xl md:text-start text-center">About Us</h1>
-                            <p className="text-sm lg:text-base xl:text-lg my-4 text-center md:text-start">
+                            <p className="text-sm lg:text-base xl:text-lg my-4 text-start">
                                 Since 2009, we have been providing cutting-edge technology and consulting services, primarily in emerging Asian markets. We are a group of innovators who believe that the future of technology is intertwined with all financial and business processes, assisting daily operations to integrate data-driven tools right now.
                             </p>
-                            <p className="text-sm lg:text-base xl:text-lg my-4 text-center md:text-start">
+                            <p className="text-sm lg:text-base xl:text-lg my-4 text-start">
                                 We evolve with technology and are proud to provide middleware services, cloud-related services, blockchain and cryptocurrency services, and the best resources available to you.
                             </p>
                         </div>
