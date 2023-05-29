@@ -1,5 +1,17 @@
 import React ,{useState, useEffect} from 'react'
+import { motion } from "framer-motion"
 import ClientCarousel from './ClientCarousel'
+import {  AboutUsPartnerLogo_Arista,
+    AboutUsPartnerLogo_CLSA,
+    AboutUsPartnerLogo_FLIPS,
+    AboutUsPartnerLogo_HKJC,
+    AboutUsPartnerLogo_NetApp,
+    AboutUsPartnerLogo_Pure,
+    AboutUsPartnerLogo_Quantum,
+    AboutUsPartnerLogo_Salto,
+    AboutUsPartnerLogo_Solace,
+    AboutUsPartnerLogo_Splunk,
+    AboutUsPartnerLogo_Symantec} from "../assets/index"
 
 const ClientsAndPartners = () => {
     const clientList = [
@@ -39,6 +51,56 @@ const ClientsAndPartners = () => {
             description: "Hong Kong Jockey ClubHong Kong Jockey ClubHong Kong Jockey ClubHong Kong Jockey ClubHong Kong Jockey ClubHong Kong Jockey Club"
         },
     ]
+    const subtitles = [
+        {
+            subtitle:"Our Clients",
+            description:"We are proud to work with some of the leading world companies, helping them to fortify and expand upon existing services using recently developed technology."
+        },
+        {
+            subtitle:"Our Partners",
+            description:"We are proud to work with some of the leading world companies, helping them to fortify and expand upon existing services using recently developed technology."
+        }
+    ]
+
+    const partnersLogo = [
+        {
+            image:AboutUsPartnerLogo_Solace,
+            target: "https://solace.com"
+        },
+        {
+            image:AboutUsPartnerLogo_NetApp,
+            target:"https://www.netapp.com/zh-hant/"
+        },
+        {
+            image:AboutUsPartnerLogo_Pure,
+            target:"https://www.purestorage.com"
+        },
+        {
+            image:AboutUsPartnerLogo_FLIPS,
+            target:"https://flipsdigital.com"
+        },
+        {
+            image:AboutUsPartnerLogo_Salto,
+            target:"https://saltosystems.com/en/"
+        },
+        {
+            image:AboutUsPartnerLogo_Arista,
+            target:"https://www.arista.com/en/"
+        },
+        {
+            image:AboutUsPartnerLogo_Quantum,
+            target:"https://post-quantum.com"
+        },
+        {
+            image:AboutUsPartnerLogo_Splunk,
+            target:"https://www.splunk.com"
+        },
+        {
+            image:AboutUsPartnerLogo_Symantec,
+            target:"https://sep.securitycloud.symantec.com/v2/landing"
+        },
+
+    ]
     const [activeItem, setActiveItem] = useState('item-0')
     const [name, setName]= useState('')
     const [description, setDescription] = useState('')
@@ -67,6 +129,41 @@ const ClientsAndPartners = () => {
         clientInformation(activeItem)
     },[activeItem])
 
+    const SubTitle = ({title,description}) =>{
+        return(
+            <>
+                <h1 className="py-2 md:py-[5] lg:py-[8] xl:py-[12] font-bold xl:text-6xl lg:text-4xl md:text-2xl text-2xl">{title}</h1>
+                <p className="py-2 md:py-[5]">{description}</p>
+            </>
+        )
+    }
+
+    const GridPhotoContainer = () =>{
+        return(
+            <div className='grid md:grid-cols-3 grid-cols-2 gap-2 w-full md:-skew-x-[10deg] md:-translate-x-12'>
+                {partnersLogo.map((item,idx)=>{
+                    return(
+                        <GridPhotoBox imageSrc={item.image} key={idx} imageTarget={item.target}/>
+                    )
+                })}
+            </div>
+        )
+    }
+
+    const GridPhotoBox = ({imageSrc, imageTarget}) =>{
+        return(
+            <>
+                <div className='col-span-1'>
+                    <a href={imageTarget} target="_blank">
+                        <motion.div whileHover={{scale:1.02, transition:{ duration: 0.5}}} className='bg-white shadow-lg hover:border hover:border-[#239CFF] p-8 flex justify-center'>
+                            <img src={imageSrc} className="md:h-[52px] h-[32px] object-contain object-center md:skew-x-[10deg] hover:cursor-pointer"/>
+                        </motion.div>
+                    </a>
+                </div>
+            </>
+        )
+    }
+
   return (
     <>
     <div className='relative flex justify-center align-middle items-center'>
@@ -74,8 +171,7 @@ const ClientsAndPartners = () => {
             <div className="w-full grid grid-cols-12 gap-4">
                 <div className="md:col-span-4 col-span-12 md:h-[650px] h-fit">
                     <div className="py-5">
-                        <h1 className="py-2 md:py-[5] lg:py-[8] xl:py-[12] font-bold xl:text-6xl lg:text-4xl md:text-2xl text-2xl">Our Clients</h1>
-                        <p className="py-2 md:py-[5]">We are proud to work with some of the leading world companies, helping them to fortify and expand upon existing services using recently developed technology.</p>
+                        <SubTitle title={subtitles[0].subtitle} description={subtitles[0].description}/> 
                     </div>
                     <div className="py-5">
                         <h1 className="xl:text-4xl lg:text-3xl md:text-2xl text-2xl font-semibold">{name}</h1>
@@ -88,6 +184,20 @@ const ClientsAndPartners = () => {
             </div>
             <div className='md:absolute md:right-0 md:top-0 md:w-3/5 relative'>
                 <ClientCarousel assignActiveItem={assignActiveItem} clientList={clientList}/>
+            </div>
+
+            <div className='w-full grid grid-cols-12 gap-4 mt-2 mb-10'>
+                <div className='md:col-span-8 col-span-12 md:order-1 order-2'>
+                    <div className='py-5'>
+                        <GridPhotoContainer/>
+
+                    </div>
+                </div>
+                <div className='md:col-span-4 col-span-12 md:order-2 order-1'>
+                    <div className='py-5'>
+                        <SubTitle title={subtitles[1].subtitle} description={subtitles[1].description}/>
+                    </div>
+                </div>
             </div>
         </div>
 
