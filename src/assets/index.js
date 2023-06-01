@@ -63,9 +63,9 @@ import MiddlewarePageHero04Photo01 from "./Middleware/Hero4_photo_1.png";
 import MiddlewarePageHero04Photo02 from "./Middleware/Hero4_photo_2.png";
 import MiddlewarePageHero04Photo03 from "./Middleware/Hero4_photo_3.png";
 import MiddlewarePageHero04Photo04 from "./Middleware/Hero4_photo_4.png";
-import MiddlewarePageIconImages01 from "./Middleware/Hero2_Logos/Cloud Technology.png";
+import MiddlewarePageIconImages01 from "./Middleware/Hero2_Logos/CloudTechnology.png";
 import MiddlewarePageIconImages02 from "./Middleware/Hero2_Logos/Dashbord.png";
-import MiddlewarePageIconImages03 from "./Middleware/Hero2_Logos/Smart City.png";
+import MiddlewarePageIconImages03 from "./Middleware/Hero2_Logos/SmartCity.png";
 import MiddlewarePageIconImages04 from "./Middleware/Hero2_Logos/Technology.png";
 
 export {
