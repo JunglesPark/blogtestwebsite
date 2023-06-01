@@ -13,7 +13,7 @@ export default function App() {
     <div>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Homepage blogs={data?data:""} />}></Route>
+        <Route path="/" element={<Homepage/>}></Route>
         <Route path="/blog/:id" element={<BlogContentPage blogs={data?data:""} />}></Route>
         <Route path="/about" element={<AboutUsPage />}></Route>
         <Route path="/services/cloud" element={<ServicesCloudPage />}></Route>
