@@ -4,12 +4,11 @@ import { ArrowLongRightIcon, ArrowSmallRightIcon, ArrowSmallLeftIcon } from '@he
 import { screenSize } from '../hooks/screenSize'
 import { motion,AnimatePresence } from 'framer-motion'
 import {  HomepageHero02Photo01,HomepageHero02Photo02, HomepageHero03Photo01} from '../assets/index'
-import  HomeHeroBanner  from './HomeHeroBanner'
+import HomeHeroBanner from './HomeHeroBanner'
 
 
 const HomeHeroSection = () => {
     let screenSizeWidth = screenSize()
-    const [seconds, setSeconds] = useState(0)
     const [servicesIndex, setServicesIndex] = useState(0)
     const latestNews= {
         "Date":"Feb 07, 2023",
@@ -103,7 +102,6 @@ const HomeHeroSection = () => {
 
 
     const Hero2ButtonArrow = () =>{
-        console.log("width:" + screenSizeWidth)
         let classNameVariable = "rounded-full border border-[#239CCF] hover:border-[#035C87] text-[#239CCF] hover:text-[#035C87] "
         if ( screenSizeWidth >= 768 ){
             classNameVariable += 'h-16 w-16 p-4'
