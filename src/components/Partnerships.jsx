@@ -17,7 +17,7 @@ const Partnerships = () => {
   ]
 
   return (
-    <div className="bg-[#DEEAF0] relative w-screen py-20 h-fit flex justify-center">
+    <div className="bg-[#DEEAF0] relative w-full py-20 h-fit flex justify-center">
         <div className="xl:max-w-7xl lg:max-w-5xl md:max-w-4xl sm:max-w-sm max-w-xs w-full mx-auto mb-12 absolute top-0 lg:-translate-y-8 md:-translate-y-6 -translate-y-5">
           <div className="text-[#035C87] w-full text-center lg:text-6xl md:text-5xl text-4xl font-bold">Our Partners</div>
         </div>
