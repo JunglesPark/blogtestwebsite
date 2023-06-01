@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, ChevronDownIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -40,8 +40,8 @@ const Navbar = () => {
 
             {/* Menu on LG Screen */}
             <div className='hidden lg:flex items-end lg:gap-x-12'>
-                {navigation.map((item) => (
-                    <>
+                {navigation.map((item, idx) => (
+                    <Fragment key={idx}>
                         {item.links ?
                             <Menu as="div" className="relataive inline-block text-left" key={item.name}>
                                 <div>
@@ -81,7 +81,7 @@ const Navbar = () => {
                                 {item.name}
                             </a>
                         }
-                    </>
+                    </Fragment>
                 ))}
 
                 {/* Language  */}
@@ -113,9 +113,9 @@ const Navbar = () => {
                     <div className='mt-6 flow-root'>
                         <div className='-my-6 divide-y- diveide-gray-500/10'>
                             <div className="space-y-2 py-6">
-                                {navigation.map((item) =>{
+                                {navigation.map((item, idx) =>{
                                     return(
-                                        <>
+                                        <Fragment key={idx}>
                                         {item.href ? 
                                             <>
                                                 <a key={item.name} href={item.href} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
@@ -129,9 +129,9 @@ const Navbar = () => {
                                                 </div>
                                                 {item.links ?
                                                     <>
-                                                        {item.links.map((menuItem) =>{
+                                                        {item.links.map((menuItem, idx) =>{
                                                             return(
-                                                                <a key={menuItem.name} href={menuItem.href} className="mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                                                                <a key={menuItem.name + idx} href={menuItem.href} className="mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                                                                     {menuItem.name}
                                                                 </a>
                                                             )
@@ -142,7 +142,7 @@ const Navbar = () => {
                                                 }
                                             </>
                                         }
-                                        </>
+                                        </Fragment>
                                     )
                                 })}
                             </div>

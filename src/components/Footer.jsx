@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { HomepageHero06Photo } from '../assets'
 import { screenSize } from '../hooks/screenSize'
 import { ArrowLongRightIcon } from '@heroicons/react/24/outline'
@@ -77,8 +77,8 @@ const Footer = () => {
                         }>
                             {informations.map((item,idx)=>{
                                 return(
-                                    <>
-                                        <div className='row-span-1 md:hidden '>
+                                    <Fragment key={idx}>
+                                        <div className='row-span-1 md:hidden' >
                                             <div className='mt-4 ml-8'>
                                                 <div className='text-[#035C87] font-semibold text-sm'>{item.name}</div>
                                                 {item?.description?.map((content,idx)=>{
@@ -98,7 +98,7 @@ const Footer = () => {
                                                 })}
                                             </div>
                                         </div>
-                                    </>
+                                    </Fragment>
 
                                 )
                             })}
