@@ -6,7 +6,7 @@ const HeroSection = ({ idx, title, content}) => {
 
   return (
     <div>
-      <div className="w-screen h-[75vh] bg-[url('./assets/Cloud/Cloud_banner_1.png')] bg-cover bg-no-repeat mb-margin-sm md:mb-margin-md lg:mb-margin-lg px-width-padding-sm md:px-width-padding-md xl:px-width-padding-lg relative flex justify-center items-center">
+      <div className="w-screen h-[75vh] bg-[url('./assets/Cloud/Cloud_banner_1_lowres.png')] bg-cover bg-no-repeat mb-margin-sm md:mb-margin-md lg:mb-margin-lg px-width-padding-sm md:px-width-padding-md xl:px-width-padding-lg relative flex justify-center items-center">
         <HeroContent idx={idx} title={title} content={content}/>
       </div>
       

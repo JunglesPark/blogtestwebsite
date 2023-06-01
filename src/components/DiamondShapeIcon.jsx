@@ -4,22 +4,8 @@ import { ServicesForCustomers } from './servicesforcustomers'
 
 const DiamondShapeIcon = ({ idx, title, content}) => {
   return (
-    <div className="relative w-screen md:h-[100vh] h-[120vh] p-20 bg-[url('./assets/background_patterns.png')] bg-cover">
-        <div className="relative md:left-[10%] md:top-[10%] collapse lg:visible xl:w-[335px] md:w-[240px] flex rotate-45 grid grid-cols-2 grid-rows-2 gap-x-4 gap-y-4">
-            <div className="p-2 bg-white overflow-hidden shadow-md border-2 flex items-center transition hover:brightness-75">
-                <img className="-rotate-45 object-cover" src="../src/assets/Cloud/Hero2_Logos/aws.png" />
-            </div>
-            <div className="p-2 bg-white overflow-hidden shadow-md border-2 flex items-center transition hover:brightness-75">
-                <img className="-rotate-45 object-cover" src="../src/assets/Cloud/Hero2_Logos/azure.png" />
-            </div>
-            <div className="p-2 bg-white overflow-hidden shadow-md border-2 flex items-center transition hover:brightness-75">
-                <img className="-rotate-45 object-cover" src="../src/assets/Cloud/Hero2_Logos/gcp.png" />
-            </div>
-            <div className="p-2 bg-white overflow-hidden shadow-md border-2 flex items-center transition hover:brightness-75">
-                <img className="-rotate-45 object-cover" src="../src/assets/Cloud/Hero2_Logos/huawei.png" />
-            </div>
-        </div>
-
+    <div className="relative w-screen md:h-[100vh] h-[120vh] p-20 bg-[url('./assets/background_patterns_lowres.png')] bg-cover">
+        
         <ServicesForCustomers idx={idx} title={title} content={content}/>
         
     </div>
