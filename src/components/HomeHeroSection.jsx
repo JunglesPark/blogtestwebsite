@@ -8,6 +8,7 @@ import  HomeHeroBanner  from './HomeHeroBanner'
 
 
 const HomeHeroSection = () => {
+    let screenSizeWidth = screenSize()
     const [seconds, setSeconds] = useState(0)
     const [servicesIndex, setServicesIndex] = useState(0)
     const latestNews= {
@@ -34,9 +35,7 @@ const HomeHeroSection = () => {
         }
     ]
 
-
-
-    let screenSizeWidth = screenSize()
+    
 
     const ServicesContainer = ({title,description,image}) =>{
         return(
@@ -104,6 +103,7 @@ const HomeHeroSection = () => {
 
 
     const Hero2ButtonArrow = () =>{
+        console.log("width:" + screenSizeWidth)
         let classNameVariable = "rounded-full border border-[#239CCF] hover:border-[#035C87] text-[#239CCF] hover:text-[#035C87] "
         if ( screenSizeWidth >= 768 ){
             classNameVariable += 'h-16 w-16 p-4'
@@ -169,18 +169,20 @@ const HomeHeroSection = () => {
         )
     }
 
-  return (
-    <div>
-        <div className='relative'>
+    const ScrollElement = () =>{
+        return(
             <div className='bg-[#239CCF] 2xl:h-[655px] xl:h-[555px] md:h-[435px] h-[305px] w-full'>
                 <div className='h-1/4 bg-white w-full'/>
                 <div className='w-full text-center rotate-90 absolute md:-left-[48%] md:top-[200px] xl:-left-[49%] lg:top-[220px] 2xl:top-[260px] md:block hidden text-white text-[8px] font-bold'>SCROLL &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</div>
             </div>
-            <HomeHeroBanner/>
-            {/* <div className="w-full  2xl:h-[655px] xl:h-[555px] md:h-[435px] h-[305px] bg-[url('./src/assets/Home2/hero1_banner_1.png')] bg-cover bg-no-repeat absolute bottom-0"
-            style={{clipPath: 'polygon(30% 0%, 100% 0, 100% 100%, 0% 100%)'}}>
+        )
+    }
 
-            </div> */}
+  return (
+    <div>
+        <div className='relative'>
+            <ScrollElement/>
+            <HomeHeroBanner/>
         </div>
         {/* Latest News Bar */}
         <NewsBar/>
