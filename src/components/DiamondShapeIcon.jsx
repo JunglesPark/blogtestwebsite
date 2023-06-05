@@ -4,7 +4,7 @@ import { ServicesForCustomers } from './servicesforcustomers'
 
 const DiamondShapeIcon = ({ idx, title, content}) => {
   return (
-    <div className="relative w-screen md:h-[100vh] h-[120vh] p-20 bg-[url('./assets/background_patterns_lowres.png')] bg-cover">
+    <div className="relative w-screen md:h-[100vh] h-[120vh] p-20 my-20 bg-[url('./assets/background_patterns_lowres.png')] bg-cover">
         
         <ServicesForCustomers idx={idx} title={title} content={content}/>
         

@@ -2,7 +2,7 @@ import React from 'react'
 
 const SkewedContainer = () => {
   return (
-    <div className="my-10 flex w-screen h-[120vh] relative bg-blue-200">
+    <div className="my-10 flex w-screen h-[120vh] relative bg-[#2D9FD9] bg-opacity-25">
         <div className="mx-10 absolute lg:-top-10 md:left-20 xl:text-4xl lg:text-3xl text-xl lg:w-1/3 md:w-1/2 font-black tracking-wide">
             <h1 className="text-[#035C87]">Our expertise with Cloud services lie in the following:</h1>
         </div>
