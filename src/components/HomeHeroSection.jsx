@@ -6,8 +6,13 @@ import { motion,AnimatePresence } from 'framer-motion'
 import {  HomepageHero02Photo01,HomepageHero02Photo02, HomepageHero03Photo01} from '../assets/index'
 import HomeHeroBanner from './HomeHeroBanner'
 
+//dayjs
+import dayjs from "dayjs";
+import localizedFormat from 'dayjs/plugin/localizedFormat'
+dayjs.extend(localizedFormat)
 
-const HomeHeroSection = () => {
+
+const HomeHeroSection = ({strapiLastNews, strapiBanners}) => {
     let screenSizeWidth = screenSize()
     const [servicesIndex, setServicesIndex] = useState(0)
     const latestNews= {
@@ -33,8 +38,6 @@ const HomeHeroSection = () => {
             image:HomepageHero02Photo02
         }
     ]
-
-    
 
     const ServicesContainer = ({title,description,image}) =>{
         return(
@@ -138,7 +141,15 @@ const HomeHeroSection = () => {
         )
     }
 
-    const NewsBar = () =>{
+
+
+    const NewsBar = ({lastNews}) =>{
+
+        const convertTimeStamp = (time) => {
+            const newDate = dayjs(time).format('LL')
+            return newDate
+        }
+
         return(
             <div className='w-full bg-[#239CCF] md:h-[72px] h-fit'>
                 <div className="grid grid-cols-12 gap-4 h-full">
@@ -148,9 +159,9 @@ const HomeHeroSection = () => {
                         </div>
                         <div className='flex items-center text-white md:text-sm  text-xs md:mt-0 mt-2'>
                             <div className='grid grid-cols-3'>
-                                <div className='mr-5 md:col-span-1'>{latestNews.Date} </div>
-                                <div className='rounded-xl bg-white text-[#239CCF] md:px-8 px-4 mr-8 md:col-span-1 col-span-2 w-fit'>{latestNews.Category}</div>
-                                <div className='md:col-span-1 col-span-3 mt-2 md:mt-0 font-semibold md:text-md text-sm'>{latestNews.Title}</div>
+                                <div className='mr-5 md:col-span-1'>{convertTimeStamp(lastNews.publishedAt)} </div>
+                                <div className='rounded-xl bg-white text-[#239CCF] md:px-8 px-4 mr-8 md:col-span-1 col-span-2 w-fit'>{lastNews.Categories}</div>
+                                <div className='md:col-span-1 col-span-3 mt-2 md:mt-0 font-semibold md:text-md text-sm'>{lastNews.Title}</div>
                             </div>
                         </div>
                     </a>
@@ -180,10 +191,10 @@ const HomeHeroSection = () => {
     <div>
         <div className='relative'>
             <ScrollElement/>
-            <HomeHeroBanner/>
+            <HomeHeroBanner banners={strapiBanners}/>
         </div>
         {/* Latest News Bar */}
-        <NewsBar/>
+        <NewsBar lastNews={strapiLastNews}/>
         <div className="w-full bg-[#035C87]/10 flex justify-center py-20">
             <div className='xl:max-w-6xl lg:max-w-4xl md:max-w-2xl sm:max-w-sm max-w-xs flex justify-center align-middle w-full'>
                 <div className='grid grid-cols-12 gap-4'>
