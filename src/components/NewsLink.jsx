@@ -1,7 +1,12 @@
 import React, {useState , useEffect} from 'react'
 import { ArrowSmallRightIcon } from '@heroicons/react/24/outline'
 
-const NewsLink = () => {
+//dayjs
+import dayjs from "dayjs";
+import localizedFormat from 'dayjs/plugin/localizedFormat'
+dayjs.extend(localizedFormat)
+
+const NewsLink = ({Latest5news}) => {
     const news = [
         {
             date: "Apr 21, 2023",
@@ -34,9 +39,13 @@ const NewsLink = () => {
             id: "#"
         },
     ]  
-    const [newsList, setNewsList] = useState(news)
- 
+    const [newsList, setNewsList] = useState(Latest5news)
 
+
+    const convertTimeStamp = (time) => {
+        const newDate = dayjs(time).format('LL')
+        return newDate
+    }
     
     return (
         <div className='flex justify-center md:mb-12 mb-20'>
@@ -61,11 +70,11 @@ const NewsLink = () => {
                                     <div className='row-span-1' key={idx}>
                                         <a href={item.id}>
                                             <div className="flex mb-2">
-                                                <h2 className="text-lg font-light text-[#8E919F]">{item.date}</h2>
-                                                <h3 className="text-base font-light text-[#8E919F] mx-5 px-8 border-2 border-solid rounded-full">{item.categories}</h3>
+                                                <h2 className="text-lg font-light text-[#8E919F]">{convertTimeStamp(item.publishedAt)}</h2>
+                                                <h3 className="text-base font-light text-[#8E919F] mx-5 px-8 border-2 border-solid rounded-full">{item.Categories}</h3>
                                             </div>
                                             <div className='mb-4'>
-                                                <p className="text-lg font-semibold text-black">{item.title}</p>
+                                                <p className="text-lg font-semibold text-black">{item.Title}</p>
                                             </div>
                                         </a>
                                         <hr />
