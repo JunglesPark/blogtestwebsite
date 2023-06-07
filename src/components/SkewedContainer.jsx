@@ -9,7 +9,7 @@ const SkewedContainer = () => {
         
         <div className=" bg-cyan-100 h-[80%] lg:w-[800px] lg:skew-x-[15deg] grid grid-rows-4 grid-cols-2 overflow-hidden absolute lg:right-40 my-20">
             <div className="flex overflow-hidden">
-                <img className="lg:skew-x-[-15deg] w-full" src="../src/assets/Cloud/Hero3_photo_1.png" />
+                <img className="w-full" src="../src/assets/Cloud/Hero3_photo_1.png" />
             </div>
             <div className="bg-[#035C87]">
                 
