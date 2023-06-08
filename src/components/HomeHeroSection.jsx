@@ -15,12 +15,6 @@ dayjs.extend(localizedFormat)
 const HomeHeroSection = ({strapiLastNews, strapiBanners}) => {
     let screenSizeWidth = screenSize()
     const [servicesIndex, setServicesIndex] = useState(0)
-    const latestNews= {
-        "Date":"Feb 07, 2023",
-        "Category":"News Cat",
-        "Title":"News Title Here"
-    }
-
     const services = [
         {
             title:"Cloud Solutions",
@@ -159,9 +153,9 @@ const HomeHeroSection = ({strapiLastNews, strapiBanners}) => {
                         </div>
                         <div className='flex items-center text-white md:text-sm  text-xs md:mt-0 mt-2'>
                             <div className='grid grid-cols-3'>
-                                <div className='mr-5 md:col-span-1'>{convertTimeStamp(lastNews.publishedAt)} </div>
-                                <div className='rounded-xl bg-white text-[#239CCF] md:px-8 px-4 mr-8 md:col-span-1 col-span-2 w-fit'>{lastNews.Categories}</div>
-                                <div className='md:col-span-1 col-span-3 mt-2 md:mt-0 font-semibold md:text-md text-sm'>{lastNews.Title}</div>
+                                <div className='mr-5 md:col-span-1'>{convertTimeStamp(lastNews?.publishedAt)} </div>
+                                <div className='rounded-xl bg-white text-[#239CCF] md:px-8 px-4 mr-8 md:col-span-1 col-span-2 w-fit'>{lastNews?.Categories}</div>
+                                <div className='md:col-span-1 col-span-3 mt-2 md:mt-0 font-semibold md:text-md text-sm'>{lastNews?.Title}</div>
                             </div>
                         </div>
                     </a>

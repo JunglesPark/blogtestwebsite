@@ -1,8 +1,6 @@
 import queryString from "query-string";
 
 const strapiEndpoint = import.meta.env.VITE_STRAPI_ENDPOINT;
-console.log(import.meta.env.MODE);
-console.log(import.meta.env.VITE_STRAPI_ENDPOINT);
 
 const getHomeBanners = async (params) => {
   const query = queryString.stringify(params);

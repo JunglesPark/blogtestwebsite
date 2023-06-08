@@ -51,11 +51,11 @@ const HomeHeroBanner = ({banners}) =>{
 
   return(
     <div className='relative'>
-        { banners.length !=0 &&
+        { banners?.length !=0 &&
           <>
           <div className={bannerContainerCss()} style={{clipPath: 'polygon(30% 0%, 100% 0, 100% 100%, 0% 100%)', backgroundImage: bgImg }}>
-              <div className='xl:max-w-6xl lg:max-w-4xl md:max-w-2xl sm:max-w-sm max-w-xs flex items-center align-middle w-full 2xl:translate-x-44 xl:translate-x-52 lg:translate-x-32 md:translate-x-20 translate-x-12'>
-                  <h1 className='text-white font-semibold lg:text-5xl md:text-3xl text-2xl lg:w-[480px] md:w-[320px] w-[240px] lg:leading-[52px] md:leading-8 leading-7'>{banners[activeBanner].Title}</h1>
+              <div className=' flex items-center align-middle w-fit 2xl:-translate-x-44 xl:-translate-x-36'>
+                  <h1 className='text-white font-semibold lg:text-5xl md:text-3xl text-2xl lg:w-[480px] md:w-[320px] w-[240px] lg:leading-[52px] md:leading-8 leading-7'>{banners[activeBanner]?.Title}</h1>
               </div>
           </div>
           <div className='absolute bottom-5 w-full left-0 right-0'>

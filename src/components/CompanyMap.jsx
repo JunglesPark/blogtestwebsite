@@ -6,7 +6,7 @@ const CompanyMap = () => {
     return(
       <div className="w-full list-none transition-none overflow-hidden ">
         <div id="google-maps-display" className="h-full w-full">
-          <iframe className="w-full md:h-[480px] h-72" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=CEO+Tower,+永康街長沙灣香港&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"/>
+          <iframe className="w-full md:h-[480px] h-72" frameBorder="0" src="https://www.google.com/maps/embed/v1/place?q=CEO+Tower,+永康街長沙灣香港&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"/>
         </div>
       </div>
     )
