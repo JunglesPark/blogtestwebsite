@@ -12,7 +12,7 @@ const InfoSection = () => {
 
   const [ref,inView, entry] = useInView({
     threshold:0.2,
-    triggerOnce:false
+    triggerOnce:true
   })
 
   const variants = {
@@ -96,7 +96,7 @@ const InfoSection = () => {
               {/* Text */}
               <div className='lg:col-span-8 xl:col-span-7 md:col-span-10 col-span-12 -skew-x-[20deg] md:px-24 md:py-12 px-2 py-12 min-h-fit'>
                 <div className='skew-x-[20deg] w-full'>
-                  <h1 className="text-4xl font-black pb-8">Your Integrated Technology Experts</h1>
+                  <h1 className="text-4xl font-black pb-8 text-[#035C87]">Your Integrated Technology Experts</h1>
                   <div className='text-base my-4'>
                     We are a team of software engineers, technology experts and project management specialists who are dedicated to providing you with the best technology solutions. That's why we approach each project with a unique vision to ensure it's successful integration into your systems.
                   </div>
