@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, Fragment} from 'react'
 import { ArrowLongRightIcon, ArrowSmallRightIcon, ArrowSmallLeftIcon } from '@heroicons/react/24/outline'
 
 import { screenSize } from '../hooks/screenSize'
@@ -147,18 +147,22 @@ const HomeHeroSection = ({strapiLastNews, strapiBanners}) => {
         return(
             <div className='w-full bg-[#239CCF] md:h-[72px] h-fit'>
                 <div className="grid grid-cols-12 gap-4 h-full">
-                    <a className='col-span-12 md:col-span-7 w-full py-4 px-8 sm:px-6 lg:px-8' href="#">
-                        <div className='flex items-center text-white text-sm'>
-                            Latest News Release
-                        </div>
-                        <div className='flex items-center text-white md:text-sm  text-xs md:mt-0 mt-2'>
-                            <div className='grid grid-cols-3'>
-                                <div className='mr-5 md:col-span-1'>{convertTimeStamp(lastNews?.publishedAt)} </div>
-                                <div className='rounded-xl bg-white text-[#239CCF] md:px-8 px-4 mr-8 md:col-span-1 col-span-2 w-fit'>{lastNews?.Categories}</div>
-                                <div className='md:col-span-1 col-span-3 mt-2 md:mt-0 font-semibold md:text-md text-sm'>{lastNews?.Title}</div>
-                            </div>
-                        </div>
-                    </a>
+                        <a className='col-span-12 md:col-span-7 w-full py-4 px-8 sm:px-6 lg:px-8' href="#">
+                            {lastNews && 
+                                <Fragment>
+                                    <div className='flex items-center text-white text-sm'>
+                                        Latest News Release
+                                    </div>
+                                    <div className='flex items-center text-white md:text-sm  text-xs md:mt-0 mt-2'>
+                                        <div className='grid grid-cols-3'>
+                                            <div className='mr-5 md:col-span-1'>{convertTimeStamp(lastNews?.publishedAt)} </div>
+                                            <div className='rounded-xl bg-white text-[#239CCF] md:px-8 px-4 mr-8 md:col-span-1 col-span-2 w-fit'>{lastNews?.Categories}</div>
+                                            <div className='md:col-span-1 col-span-3 mt-2 md:mt-0 font-semibold md:text-md text-sm'>{lastNews?.Title}</div>
+                                        </div>
+                                    </div>
+                                </Fragment>
+                            }
+                        </a>
                     <div className='col-span-5 w-full bg-white -translate-y-8 hidden md:block' style={{clipPath: 'polygon(10% 0%, 100% 0, 100% 100%, 0% 100%)'}}>
                         <div className="grid grid-cols-12 gap-0 h-full">
                             <div className='col-span-7 w-full flex items-center justify-center bg-white' >
@@ -167,6 +171,7 @@ const HomeHeroSection = ({strapiLastNews, strapiBanners}) => {
                             <div className='col-span-5 w-full bg-[#6DC4E2]' style={{clipPath: 'polygon(25% 0%, 100% 0, 100% 100%, 0% 100%)'}}/>
                         </div> 
                     </div>
+                    
                 </div>
             </div>
         )

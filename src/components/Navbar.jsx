@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, ChevronDownIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -20,6 +20,54 @@ const Navbar = () => {
         ]},
         {name: 'Contact Us', href:'/contactus'},
     ]
+
+    useEffect(()=>{
+		const language = (sessionStorage.getItem("language"))
+		console.log(language)
+		if(!language){
+			// console.log('Language not found')
+			const userLanguage = window.navigator.userLanguage || window.navigator.language
+			// console.log(userLanguage)
+			if(/^en\b/.test(userLanguage)){
+				// console.log('is English')
+				setLanguage("en")
+				sessionStorage.setItem("language", "en")
+			} else if(/.*?hk$/.test(userLanguage)){
+				// console.log('is Chinese')
+				setLanguage("zh-Hant-HK")
+                sessionStorage.setItem("language", "zh-Hant-HK")
+            } else if(/.*TW$/.test(userLanguage)){
+                // console.log('is taiwan')
+                setLanguage("zh-Hant-HK")
+                sessionStorage.setItem("language", "zh-Hant-HK")
+			} else {
+				setLanguage("en")
+                sessionStorage.setItem("language", "en")
+			}
+		} else {
+			if(/.*?hk$/.test(language)){
+				// console.log('is Chinese')
+				setLanguage("zh-Hant-HK")
+			} else if(/^en\b/.test(language)){
+				// console.log('is English')
+				setLanguage("en")
+			} else {
+				setLanguage("en")
+			}
+		}
+    },[])
+
+    const handleChangeLang = (lang) =>{
+        if(lang === 'en'){
+            setLanguage("en")
+            sessionStorage.setItem("language", "en")
+        } else {
+            setLanguage('zh-Hant-HK')
+            sessionStorage.setItem("language", "zh-Hant-HK")
+        }
+        window.location.reload();
+    }
+
 
   return (
     <header className='bg-white'>
@@ -86,10 +134,10 @@ const Navbar = () => {
 
                 {/* Language  */}
                 <div className='flex'>
-                    <button className='border-2 border-[#035C87] px-5 border-r-0 rounded-none bg-white hover:bg-gray-200'>
+                    <button className='border-2 border-[#035C87] px-5 border-r-0 rounded-none bg-white hover:bg-gray-200' onClick={()=>handleChangeLang("en")}>
                         <span className='text-[#239CCF]'>English</span>
                     </button>
-                    <button className='border-2 border-[#035C87] px-5 rounded-none bg-white hover:bg-gray-200'>
+                    <button className='border-2 border-[#035C87] px-5 rounded-none bg-white hover:bg-gray-200' onClick={()=> handleChangeLang("zh-Hant-HK")}>
                         <span className='text-[#239CCF]'>中文</span>
                     </button>
                 </div>

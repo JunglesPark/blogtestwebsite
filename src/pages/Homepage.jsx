@@ -13,7 +13,13 @@ const Homepage = () => {
   const [isError, setIsError] = useState(false)
   const [animationEnd, setAnimationEnd] = useState(false)
   const [isVisited, setIsVisited] = useState (sessionStorage.getItem('isVisited'))
+  const [locale, setLocale] = useState(sessionStorage.getItem('language'))
   
+
+  useEffect(()=>{
+    console.log("HOME:" + locale)
+  },[locale])
+
   useEffect(()=>{
     if(sessionStorage.getItem('isVisited')){
       setIsVisited(true)
@@ -66,7 +72,7 @@ const Homepage = () => {
   const getStrapiHomeNews = async() =>{
     let params = {
       populate : "*",
-      locale : "en",
+      locale : locale,
       "sort[0]":"publishedAt:desc",
       "pagination[pageSize]": 5,
       "pagination[page]" : 1
@@ -87,7 +93,7 @@ const Homepage = () => {
   const getStrapiHomeBanners = async() =>{
     let params = {
       populate : "*",
-      locale:  "en",
+      locale:  locale,
 
     }
     return getHomeBanners(params).then((data)=>{
