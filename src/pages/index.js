@@ -8,6 +8,7 @@ import ServicesStartUpPage from "./ServicesStartUpPage";
 import ContactUsPage from "./ContactUsPage";
 import PageNotFoundPage from "./PageNotFound";
 import NewsPage from "./NewsPage";
+import NewsDetailPage from "./NewsDetailPage";
 
 export {
   Homepage,
@@ -20,4 +21,5 @@ export {
   ContactUsPage,
   PageNotFoundPage,
   NewsPage,
+  NewsDetailPage,
 };

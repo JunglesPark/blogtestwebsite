@@ -17,10 +17,6 @@ const Homepage = () => {
   
 
   useEffect(()=>{
-    console.log("HOME:" + locale)
-  },[locale])
-
-  useEffect(()=>{
     if(sessionStorage.getItem('isVisited')){
       setIsVisited(true)
       setAnimationEnd(true)
